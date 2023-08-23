@@ -82,37 +82,11 @@ author:
     avatar: "profile_photo.png"
     bio: "Undergraduate student at Department of Statistics, Seoul National University"
     location: "Seoul, Korea"
-    employer:
-    pubmed:
     googlescholar:
     email: "sjh9876@snu.ac.kr"
-    researchgate:
-    uri:
-    bitbucket:
-    codepen:
-    dribbble:
-    flickr:
-    facebook:
-    foursquare:
     github: "Sondroid"
-    google_plus:
-    keybase:
-    instagram:
-    impactstory:
-    lastfm:
     linkedin:
-    orcid:
-    pinterest:
-    soundcloud:
-    stackoverflow:
-    steam:
-    tumblr:
-    twitter: "https://twitter.com/JhnSonny"
-    vine:
-    weibo:
-    xing:
-    youtube:
-    wikipedia:
+    twitter: "JhnSonny"
 
 # Reading Files
 include:
