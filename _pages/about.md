@@ -8,7 +8,7 @@ redirect_from:
     - /about.html
 ---
 
-Hi! I'm a research intern at <a href="https://vision.snu.ac.kr//" style="color: #7289da; text-decoration:none">**Vision & Learning Lab**</a>.
+Hi! I'm a research intern at <a href="https://vision.snu.ac.kr/" style="color: #7289da; text-decoration:none">**Vision & Learning Lab**</a>, under supervision of Prof. <a href="https://vision.snu.ac.kr/gunhee/" style="color: #7289da; text-decoration:none">**Gunhee Kim**</a>.
 
 My research interest includes:
 
@@ -18,9 +18,9 @@ My research interest includes:
 ## Education
 
 -   **B.S.** in Statistics and Artificial Intelligence, <a href="https://en.snu.ac.kr/" style="color: #7289da; text-decoration: none;">**Seoul National University**</a> \\
-    Mar. 2017 - Aug. 2023 \\
-    Leave of absence for military service: Mar. 2019 - Oct. 2020
-
+    Mar. 2017 - Aug. 2023 (Leave of absence for military service: Mar. 2019 - Oct. 2020) \\
+    Graduated with summa cum laude
+    
 ## Preprints
 
 -   **When Continual Learning Meets Meta-Learning: A Survey** \\
@@ -42,5 +42,6 @@ My research interest includes:
 
 ## Work Experience
 
--   Knowledge AI Lab, <a href="https://kr.ncsoft.com/en/" style="color: #7289da; text-decoration: none;">**NCSOFT**</a> (Jul 2021 - Aug 2021) \\
+-   Knowledge AI Lab, <a href="https://kr.ncsoft.com/en/" style="color: #7289da; text-decoration: none;">**NCSOFT**</a> \\
+    Jul 2021 - Aug 2021 \\
     Research Intern
