@@ -25,14 +25,14 @@ My research interest includes:
 
 -   **When Continual Learning Meets Meta-Learning: A Survey** \\
     <a href="https://Sondroid.github.io" style="color: #7289da; text-decoration: none;">[paper]</a> \\
-    <b>Jaehyeon Son</b>\*, Soochan Lee\*, Gunhee Kim (\*: equal contribution) \\
+    <b>Jaehyeon Son</b>*, Soochan Lee*, Gunhee Kim (\*: equal contribution) \\
     <span style="color:darkred">**ArXiv**</span> 2023
 
 ## Publication
 
 -   **Recasting Meta-Continual Learning as Sequence Modeling** \\
     <a href="https://Sondroid.github.io" style="color: #7289da; text-decoration: none;">[paper]</a> \\
-    Soochan Lee <b>Jaehyeon Son</b>, Gunhee Kim \\
+    Soochan Lee, <b>Jaehyeon Son</b>, Gunhee Kim \\
     <span style="color:darkred">**NeurIPS**</span> 2023
 
 ## Honors
