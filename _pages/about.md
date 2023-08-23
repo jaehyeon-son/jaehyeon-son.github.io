@@ -19,7 +19,7 @@ My research interest includes:
 
 -   **B.S.** in Statistics and Artificial Intelligence, <a href="https://en.snu.ac.kr/" style="color: #7289da; text-decoration: none;">**Seoul National University**</a> \\
     Mar. 2017 - Aug. 2023 (Leave of absence for military service: Mar. 2019 - Oct. 2020) \\
-    Graduated with <span style="color:darkred">**Summa Cum Laude**</span>
+    Graduated with <span style="color:darkred">**Summa Cum Laude**</span> (GPA: 3.95 // 4.3)
     
 ## Preprints
 
