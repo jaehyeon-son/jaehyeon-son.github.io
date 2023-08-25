@@ -21,14 +21,14 @@ My research interest includes:
     Mar. 2017 - Aug. 2023 (Leave of absence for military service: Mar. 2019 - Oct. 2020) \\
     Graduated with <span style="color:darkred">**Summa Cum Laude**</span> (GPA: 3.95 / 4.3)
     
-## Preprints
+<!-- ## Preprints -->
 
 <!-- -   **When Continual Learning Meets Meta-Learning: A Survey** \\
     <a href="https://Sondroid.github.io" style="color: #7289da; text-decoration: none;">[paper]</a> \\
     <u>Jaehyeon Son*</u>, Soochan Lee\*, Gunhee Kim (\*: equal contribution) \\
     <span style="color:darkred">**ArXiv**</span> 2023 -->
 
-## Publication
+<!-- ## Publication -->
 <!-- 
 -   **Recasting Meta-Continual Learning as Sequence Modeling** \\
     <a href="https://Sondroid.github.io" style="color: #7289da; text-decoration: none;">[paper]</a> \\
