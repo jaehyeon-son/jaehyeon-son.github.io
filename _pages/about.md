@@ -8,12 +8,15 @@ redirect_from:
     - /about.html
 ---
 
-Hi! I'm a research intern at <a href="https://vision.snu.ac.kr/" style="color: #7289da; text-decoration:none">**Vision & Learning Lab**</a>, under the supervision of Prof. <a href="https://vision.snu.ac.kr/gunhee/" style="color: #7289da; text-decoration:none">**Gunhee Kim**</a>.
+Hi! I'm currently a research intern at <a href="https://vision.snu.ac.kr/" style="color: #7289da; text-decoration:none">**Vision & Learning Lab**</a>, under the supervision of Prof. <a href="https://vision.snu.ac.kr/gunhee/" style="color: #7289da; text-decoration:none">**Gunhee Kim**</a>.
 
-My research interest includes:
+My research interest lies improving neural networks within more real-world learning setups, like non-stationary environments and having limited training data.
+I'm particularly interested in:
 
 -   Meta-learning
+-   Reinforcement learning
 -   Continual learning
+
 
 ## Education
 
