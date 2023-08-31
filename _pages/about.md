@@ -31,7 +31,7 @@ I'm particularly interested in:
 
 -   **Reformulating Meta-Continual Learning as a Sequence Modeling Problem** \\
     Establishing a connection between continual learning & sequence modeling \\
-    <em>Under Review<\em>
+    <em>Under Review</em>
 
 ## Work Experience
 
