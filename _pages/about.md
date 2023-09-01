@@ -26,12 +26,17 @@ I'm particularly interested in:
     
 ## Ongoing Projects
 
--   **A Survey on the Intersection of Continual Learning and Meta-Learning** \\
-    Providing a taxonomy and a review on meta-continual learning & continual meta-learning
-
 -   **Reformulating Meta-Continual Learning as a Sequence Modeling Problem** \\
     Establishing a connection between continual learning & sequence modeling \\
     <em>Under Review</em>
+
+-   **Designing Efficient Meta-Continual Learning Method with Sequential Bayesian Approach** \\
+    Building minimal and general meta-continual learner upon Prototypical Network
+
+-   **A Survey on the Intersection of Continual Learning and Meta-Learning** \\
+    Providing a taxonomy and a review on meta-continual learning & continual meta-learning
+
+
 
 ## Work Experience
 
