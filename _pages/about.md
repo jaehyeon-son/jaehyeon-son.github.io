@@ -33,7 +33,7 @@ I'm particularly interested in:
 ## Ongoing Projects
 
 -   **Sequential Bayesian Continual Learning with Meta-Learned Neural Networks** \\
-    Building minimal and general meta-continual learner upon Prototypical Network
+    Building efficient and general meta-continual learner
 
 -   **On the Intersection of Continual Learning and Meta-Learning: A survey** \\
     Providing a taxonomy and a review on meta-continual learning & continual meta-learning
