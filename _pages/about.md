@@ -24,11 +24,11 @@ I'm particularly interested in:
     Mar. 2017 - Aug. 2023 (Leave of absence for military service: Mar. 2019 - Oct. 2020) \\
     Graduated with <span style="color:darkred">**Summa Cum Laude**</span> (GPA: 3.95 / 4.3)
 
-## Publication    
+<!-- ## Publication    
 
 -   **Recasting Meta-Continual Learning as a Sequence Modeling** \\
     Soochan Lee, <u>Jaehyeon Son</u>, Gunhee Kim \\
-    <span style="color:darkred">**NeurIPS**</span> 2023
+    <span style="color:darkred">**NeurIPS**</span> 2023 -->
 
 ## Ongoing Projects
 
@@ -45,7 +45,7 @@ I'm particularly interested in:
     Jul 2021 - Aug 2021 \\
     Research Intern
 
-## Honors & Awards
+## Honors \& Awards
 
 -   Songam Scholarship \\
     Mar. 2017 - Feb. 2023
