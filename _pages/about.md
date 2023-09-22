@@ -32,10 +32,10 @@ I'm particularly interested in:
     <span style="color:darkred">**NeurIPS**</span> 2023
 ## Ongoing Projects
 
--   **Designing Efficient Meta-Continual Learning Method with Sequential Bayesian Approach** \\
+-   **Sequential Bayesian Continual Learning with Meta-Learned Neural Networks** \\
     Building minimal and general meta-continual learner upon Prototypical Network
 
--   **A Survey on the Intersection of Continual Learning and Meta-Learning** \\
+-   **On the Intersection of Continual Learning and Meta-Learning: A survey** \\
     Providing a taxonomy and a review on meta-continual learning & continual meta-learning
 
 
