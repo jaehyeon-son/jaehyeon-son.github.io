@@ -40,17 +40,16 @@ I'm particularly interested in:
     Providing a taxonomy and a review on meta-continual learning & continual meta-learning
 
 
-
 ## Work Experience
 
 -   Knowledge AI Lab, <a href="https://kr.ncsoft.com/en/" style="color: #7289da; text-decoration: none;">**NCSOFT**</a> \\
     Jul 2021 - Aug 2021 \\
     Research Intern
 
-## Honors
+## Honors & Awards
 
 -   Songam Scholarship \\
     Mar. 2017 - Feb. 2023
 
 -   Honor of Summa Cum Laude \\
-    Aug. 2023 \\
+    Aug. 2023
