@@ -47,4 +47,4 @@ I'm particularly interested in:
 ## Honors
 
 -   Songam Scholarship \\
-    Mar. 2017 - Feb. 2023
+    Mar. 2017 - Feb. 2023 \\
