@@ -50,3 +50,6 @@ I'm particularly interested in:
 
 -   Songam Scholarship \\
     Mar. 2017 - Feb. 2023
+
+-   Honor of Summa Cum Laude \\
+    Aug. 2023 \\
