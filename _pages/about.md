@@ -23,12 +23,14 @@ I'm particularly interested in:
 -   **B.S.** in **Statistics** and **Artificial Intelligence**, <a href="https://en.snu.ac.kr/" style="color: #7289da; text-decoration: none;">**Seoul National University**</a> \\
     Mar. 2017 - Aug. 2023 (Leave of absence for military service: Mar. 2019 - Oct. 2020) \\
     Graduated with <span style="color:darkred">**Summa Cum Laude**</span> (GPA: 3.95 / 4.3)
-    
-## Ongoing Projects
 
--   **Reformulating Meta-Continual Learning as a Sequence Modeling Problem** \\
+## Publication    
+
+-   **Recasting Meta-Continual Learning as a Sequence Modeling** \\
+    Soochan Lee, <u>Jaehyeon Son</u>, Gunhee Kim \\
     Establishing a connection between continual learning & sequence modeling \\
-    <em>Under Review</em>
+    <span style="color:darkred">**NeurIPS**</span> 2023
+## Ongoing Projects
 
 -   **Designing Efficient Meta-Continual Learning Method with Sequential Bayesian Approach** \\
     Building minimal and general meta-continual learner upon Prototypical Network
