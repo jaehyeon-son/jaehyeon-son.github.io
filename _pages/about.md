@@ -28,8 +28,7 @@ I'm particularly interested in:
 
 -   **Recasting Meta-Continual Learning as a Sequence Modeling** \\
     Soochan Lee, <u>Jaehyeon Son</u>, Gunhee Kim \\
-    Establishing a connection between continual learning & sequence modeling \\
-    <span style="color:darkred">**NeurIPS**</span> 2023
+    <span style="color:darkred">**NeurIPS 2023**</span> 
 
 ## Ongoing Projects
 
