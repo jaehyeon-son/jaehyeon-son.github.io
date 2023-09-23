@@ -52,4 +52,4 @@ I'm particularly interested in:
     Mar. 2017 - Feb. 2023
 
 -   Honor of Summa Cum Laude \\
-    Aug. 2023 \\
+    Aug. 2023
