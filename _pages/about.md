@@ -18,6 +18,8 @@ I'm particularly interested in:
 -   Continual learning
 -   Reinforcement learning
 
+This December, I'll deliver a poster presentation at NeurIPS 2023 in New Orleans.
+
 ## Education
 
 -   **B.S.** in **Statistics** and **Artificial Intelligence**, <a href="https://en.snu.ac.kr/" style="color: #7289da; text-decoration: none;">**Seoul National University**</a> \\
@@ -38,15 +40,13 @@ I'm particularly interested in:
 -   **On the Intersection of Continual Learning and Meta-Learning: A survey** \\
     Providing a taxonomy and a review on meta-continual learning & continual meta-learning
 
-
-
 ## Work Experience
 
 -   Knowledge AI Lab, <a href="https://kr.ncsoft.com/en/" style="color: #7289da; text-decoration: none;">**NCSOFT**</a> \\
     Jul 2021 - Aug 2021 \\
     Research Intern
 
-## Honors
+## Honors &
 
 -   Songam Scholarship \\
     Mar. 2017 - Feb. 2023
