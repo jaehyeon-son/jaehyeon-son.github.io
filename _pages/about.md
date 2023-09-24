@@ -37,7 +37,7 @@ This December, I'll deliver a poster presentation at NeurIPS 2023 in New Orleans
 -   **Sequential Bayesian Continual Learning with Meta-Learned Neural Networks** \\
     Building efficient and general meta-continual learner
 
--   **On the Intersection of Continual Learning and Meta-Learning: A survey** \\
+-   **On the Intersection of Continual Learning and Meta-Learning: A Survey** \\
     Providing a taxonomy and a review on meta-continual learning & continual meta-learning
 
 ## Work Experience
