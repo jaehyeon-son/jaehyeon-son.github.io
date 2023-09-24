@@ -26,7 +26,7 @@ I'm particularly interested in:
 
 ## Publication    
 
--   **Recasting Meta-Continual Learning as a Sequence Modeling** \\
+-   **Recasting Meta-Continual Learning as Sequence Modeling** \\
     Soochan Lee, <u>Jaehyeon Son</u>, Gunhee Kim \\
     <span style="color:darkred">**NeurIPS 2023**</span> 
 
