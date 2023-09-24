@@ -46,7 +46,7 @@ This December, I'll deliver a poster presentation at NeurIPS 2023 in New Orleans
     Jul 2021 - Aug 2021 \\
     Research Intern
 
-## Honors &
+## Honors & Awards
 
 -   Songam Scholarship \\
     Mar. 2017 - Feb. 2023
