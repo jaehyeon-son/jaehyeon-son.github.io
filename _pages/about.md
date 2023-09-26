@@ -13,7 +13,7 @@ Hi! I'm currently a research intern at <a href="https://vision.snu.ac.kr/" style
 My research interest primarily lies in:
 
 -   Transfer learning: to extract meta-knowledge to build foundational model. This includes meta-learning, pre-trained LM, and offline RL.
--   Improving neural networks in more realistic learning scenarios, especially under non-stationary environment and resource constrained.
+-   Improving neural networks in more realistic learning scenarios, especially under non-stationarity and resource constraint.
 
 I'm looking forward to attending NeurIPS 2023 in New Orleans this December! I'll deliver a poster presentation for my 2nd-author paper.
 
