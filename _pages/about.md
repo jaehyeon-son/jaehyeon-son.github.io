@@ -25,15 +25,15 @@ I'm looking forward to attending NeurIPS 2023 in New Orleans this December! I'll
 
 ## Publications & Preprints
 
--   **Recasting Meta-Continual Learning as Sequence Modeling** \\
-    Soochan Lee, <u>Jaehyeon Son</u>, Gunhee Kim \\
-    <span style="color:darkred">**NeurIPS 2023**</span> 
+-   **On the Intersection of Continual Learning and Meta-Learning: A Survey** \\
+    Under review
 
 -   **Sequential Bayesian Continual Learning with Meta-Learned Neural Networks** \\
     Under review
 
--   **On the Intersection of Continual Learning and Meta-Learning: A Survey** \\
-    Under review
+-   **Recasting Meta-Continual Learning as Sequence Modeling** \\
+    Soochan Lee, <u>Jaehyeon Son</u>, Gunhee Kim \\
+    <span style="color:darkred">**NeurIPS 2023**</span> 
 
 ## Work Experience
 
