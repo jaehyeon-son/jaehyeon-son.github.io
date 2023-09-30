@@ -25,7 +25,7 @@ I'm looking forward to attending NeurIPS 2023 in New Orleans this December! I'll
 
 ## Publications & Preprints
 
--   **On the Intersection of Continual Learning and Meta-Learning: A Survey** \\
+-   **When Meta-Learning Meets Continual Learning: A Survey** \\
     Under review
 
 -   **Sequential Bayesian Continual Learning with Meta-Learned Neural Networks** \\
