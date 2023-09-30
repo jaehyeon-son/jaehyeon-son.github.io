@@ -23,19 +23,17 @@ I'm looking forward to attending NeurIPS 2023 in New Orleans this December! I'll
     Mar. 2017 - Aug. 2023 (Leave of absence for military service: Mar. 2019 - Oct. 2020) \\
     Graduated with <span style="color:darkred">**Summa Cum Laude**</span> (GPA: 3.95 / 4.3)
 
-## Publication    
+## Publications & Preprints
 
 -   **Recasting Meta-Continual Learning as Sequence Modeling** \\
     Soochan Lee, <u>Jaehyeon Son</u>, Gunhee Kim \\
     <span style="color:darkred">**NeurIPS 2023**</span> 
 
-## Ongoing Projects
-
 -   **Sequential Bayesian Continual Learning with Meta-Learned Neural Networks** \\
-    Building efficient and general meta-continual learner
+    Under review
 
 -   **On the Intersection of Continual Learning and Meta-Learning: A Survey** \\
-    Providing a taxonomy and a review on meta-continual learning & continual meta-learning
+    Under review
 
 ## Work Experience
 
