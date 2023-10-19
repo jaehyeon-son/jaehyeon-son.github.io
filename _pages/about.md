@@ -25,11 +25,11 @@ I'm looking forward to attending NeurIPS 2023 in New Orleans this December! I'll
 
 ## Publications & Preprints
 
--   **When Meta-Learning Meets Continual Learning: A Survey** \\
+<!-- -   **When Meta-Learning Meets Continual Learning: A Survey** \\
     Under review
 
 -   **Sequential Bayesian Continual Learning with Meta-Learned Neural Networks** \\
-    Under review
+    Under review -->
 
 -   **Recasting Continual Learning as Sequence Modeling** \\
     Soochan Lee, <u>Jaehyeon Son</u>, Gunhee Kim \\
