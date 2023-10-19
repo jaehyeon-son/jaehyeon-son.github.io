@@ -23,7 +23,8 @@ I'm looking forward to attending NeurIPS 2023 in New Orleans this December! I'll
     Mar. 2017 - Aug. 2023 (Leave of absence for military service: Mar. 2019 - Oct. 2020) \\
     Graduated with <span style="color:darkred">**Summa Cum Laude**</span> (GPA: 3.95 / 4.3)
 
-## Publications & Preprints
+## Publication
+<!-- ## Publications & Preprints -->
 
 <!-- -   **When Meta-Learning Meets Continual Learning: A Survey** \\
     Under review
