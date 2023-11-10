@@ -27,7 +27,7 @@ I'm looking forward to attending NeurIPS 2023 in New Orleans this December! I'll
 ## Publications & Preprints
 
 -   **When Meta-Learning Meets Online and Continual Learning: A Survey** \\
-    <u>Jaehyeon Son</u>*, Soochan Lee*, Gunhee Kim (*: equal contribution)\\
+    <u>Jaehyeon Son</u>\*, Soochan Lee\*, Gunhee Kim (\*: equal contribution)\\
     <span style="color:darkred">**Preprint**</span> \\
     <a href="https://arxiv.org/abs/2311.05241" style="color: #7289da; text-decoration: none;">[paper]</a>
 
