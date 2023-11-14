@@ -14,8 +14,8 @@ My research interest primarily lies in addressing the challenges of contemporary
 
 This includes:
 -   continual learning
--   transfer learning (meta-learning, language model pre-training, multi-modal pre-training)
--   offline reinforcement learning
+-   transfer learning (meta-learning, LM pre-training, multi-modal pre-training)
+-   offline RL
 
 I'm heading to NeurIPS 2023 this December!
 I'll deliver a poster presentation for my 2nd-author paper.
