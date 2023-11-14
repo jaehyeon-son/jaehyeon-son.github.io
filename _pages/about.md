@@ -10,12 +10,15 @@ redirect_from:
 
 Hi! I'm currently a research intern at <a href="https://vision.snu.ac.kr/" style="color: #7289da; text-decoration:none">**Vision & Learning Lab**</a>, under the supervision of Prof. <a href="https://vision.snu.ac.kr/gunhee/" style="color: #7289da; text-decoration:none">**Gunhee Kim**</a>.
 
-My research interest primarily lies in:
+My research interest primarily lies in addressing the challenges of contemporary deep neural networks.
 
--   Transfer learning: to extract meta-knowledge from large-scale dataset to build foundational model. This includes meta-learning, pre-trained LM, and offline RL.
--   Improving neural networks in more realistic learning scenarios, especially under non-stationarity and resource constraint.
+This includes:
+-   continual learning
+-   transfer learning (meta-learning, language model pre-training, multi-modal pre-training)
+-   offline reinforcement learning
 
-I'm looking forward to attending NeurIPS 2023 in New Orleans this December! I'll deliver a poster presentation for my 2nd-author paper.
+I'm heading to NeurIPS 2023 this December!
+I'll deliver a poster presentation for my 2nd-author paper.
 
 Here's my <a href="https://drive.google.com/file/d/1Vwdy9AjydgEzJSiGcJOn0VigXRFqRk4V/view" style="color: #7289da; text-decoration:none">**CV**.
 
