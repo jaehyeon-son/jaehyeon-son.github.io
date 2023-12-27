@@ -16,9 +16,6 @@ This includes:
 -   transfer learning (meta-learning, multi-modal pre-training, LM pre-training)
 -   offline RL
 
-I'm heading to NeurIPS 2023 this December!
-I'll deliver a poster presentation for my 2nd-author paper.
-
 Here's my <a href="https://drive.google.com/file/d/1Vwdy9AjydgEzJSiGcJOn0VigXRFqRk4V/view" style="color: #7289da; text-decoration:none">**CV**.
 
 ## Education
