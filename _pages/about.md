@@ -32,10 +32,10 @@ Here's my <a href="https://drive.google.com/file/d/1Vwdy9AjydgEzJSiGcJOn0VigXRFq
     Preprint \\
     <a href="https://arxiv.org/abs/2311.05241" style="color: #7289da; text-decoration: none;">[paper]</a>
 
--   **Sequential Bayesian Continual Learning with Meta-Learned Neural Networks** \\
+-   **Learning to Continually Learn with the Bayesian Principle** \\
     Soochan Lee, Hyeonseong Jeon, <u>Jaehyeon Son</u>, Gunhee Kim \\
-    Preprint \\
-    <a href="https://openreview.net/forum?id=6r0BOIb771" style="color: #7289da; text-decoration: none;">[paper]</a>
+    <span style="color:darkred">**ICML 2024**</span> \\
+    <a href="https://jaehyeon-son.github.io/" style="color: #7289da; text-decoration: none;">[paper]</a>
 
 -   **Recasting Continual Learning as Sequence Modeling** \\
     Soochan Lee, <u>Jaehyeon Son</u>, Gunhee Kim \\
