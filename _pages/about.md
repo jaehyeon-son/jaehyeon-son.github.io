@@ -12,9 +12,8 @@ Hi! I'm currently a research intern at <a href="https://vision.snu.ac.kr/" style
 
 My research interest primarily lies in addressing the challenges of contemporary deep neural networks with large-scale knowledge transfer.
 This includes:
--   continual learning
--   transfer learning (meta-learning, multi-modal pre-training, LM pre-training)
--   offline RL
+-   meta-RL, in-context RL, offline RL
+-   meta-continual learning, learning to continually learn
 
 Here's my <a href="https://drive.google.com/file/d/1Vwdy9AjydgEzJSiGcJOn0VigXRFqRk4V/view" style="color: #7289da; text-decoration:none">**CV**.
 
