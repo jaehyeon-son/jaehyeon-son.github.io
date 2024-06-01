@@ -34,7 +34,8 @@ Here's my <a href="https://drive.google.com/file/d/1Vwdy9AjydgEzJSiGcJOn0VigXRFq
 -   **Learning to Continually Learn with the Bayesian Principle** \\
     Soochan Lee, Hyeonseong Jeon, <u>Jaehyeon Son</u>, Gunhee Kim \\
     <span style="color:darkred">**ICML 2024**</span> \\
-    <a href="https://jaehyeon-son.github.io/" style="color: #7289da; text-decoration: none;">[paper]</a>
+    <a href="https://arxiv.org/abs/2405.18758" style="color: #7289da; text-decoration: none;">[paper]</a>
+    <a href="https://github.com/soochan-lee/SB-MCL" style="color: #7289da; text-decoration: none;">[code]</a>
 
 -   **Recasting Continual Learning as Sequence Modeling** \\
     Soochan Lee, <u>Jaehyeon Son</u>, Gunhee Kim \\
