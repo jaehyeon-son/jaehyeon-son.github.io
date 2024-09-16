@@ -24,11 +24,11 @@ This includes:
     Graduated with <span style="color:darkred">**Summa Cum Laude**</span> (GPA: 3.95 / 4.3)
 
 <!-- ## Publication -->
-## Publications & Preprints
+## Publications
 
 -   **When Meta-Learning Meets Online and Continual Learning: A Survey** \\
     <u>Jaehyeon Son</u>\*, Soochan Lee\*, Gunhee Kim (\*: equal contribution)\\
-    Preprint \\
+    <span style="color:darkred">**IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI), 2024**</span> \\
     <a href="https://arxiv.org/abs/2311.05241" style="color: #7289da; text-decoration: none;">[paper]</a>
 
 -   **Learning to Continually Learn with the Bayesian Principle** \\
