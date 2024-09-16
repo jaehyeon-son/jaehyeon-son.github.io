@@ -33,13 +33,13 @@ This includes:
 
 -   **Learning to Continually Learn with the Bayesian Principle** \\
     Soochan Lee, Hyeonseong Jeon, <u>Jaehyeon Son</u>, Gunhee Kim \\
-    <span style="color:darkred">**International Conference on Machine Learning (ICML) 2024**</span> \\
+    <span style="color:darkred">**International Conference on Machine Learning (ICML), 2024**</span> \\
     <a href="https://arxiv.org/abs/2405.18758" style="color: #7289da; text-decoration: none;">[paper]</a>
     <a href="https://github.com/soochan-lee/SB-MCL" style="color: #7289da; text-decoration: none;">[code]</a>
 
 -   **Recasting Continual Learning as Sequence Modeling** \\
     Soochan Lee, <u>Jaehyeon Son</u>, Gunhee Kim \\
-    <span style="color:darkred">**Neural Information Processing Systems (NeurIPS) 2023**</span> \\
+    <span style="color:darkred">**Neural Information Processing Systems (NeurIPS), 2023**</span> \\
     <a href="https://arxiv.org/abs/2310.11952" style="color: #7289da; text-decoration: none;">[paper]</a>
     <a href="https://github.com/soochan-lee/cl-as-seq" style="color: #7289da; text-decoration: none;">[code]</a>
     
