@@ -12,9 +12,9 @@ Hi! I'm currently a research intern at <a href="https://vision.snu.ac.kr/" style
 
 My research interest primarily lies in developing robust agents capable of learning through trial and error.
 This includes:
--   in-context RL, offline RL
+-   In-context RL, offline RL
 -   LLM and VLM agents
--   continual learning
+-   Continual learning
 
 <!-- Here's my <a href="https://drive.google.com/file/d/1Vwdy9AjydgEzJSiGcJOn0VigXRFqRk4V/view" style="color: #7289da; text-decoration:none">**CV**. -->
 
