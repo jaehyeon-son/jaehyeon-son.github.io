@@ -11,11 +11,10 @@ redirect_from:
 Hi! I'm currently a research intern at <a href="https://vision.snu.ac.kr/" style="color: #7289da; text-decoration:none">**Vision & Learning Lab**</a>, under the supervision of Prof. <a href="https://vision.snu.ac.kr/gunhee/" style="color: #7289da; text-decoration:none">**Gunhee Kim**</a>.
 
 My research interest primarily lies in developing robust agents capable of learning through trial and error.
-
 This includes:
 -   in-context RL, offline RL
 -   LLM and VLM agents
--   continual learning, learning to continually learn
+-   continual learning
 
 <!-- Here's my <a href="https://drive.google.com/file/d/1Vwdy9AjydgEzJSiGcJOn0VigXRFqRk4V/view" style="color: #7289da; text-decoration:none">**CV**. -->
 
