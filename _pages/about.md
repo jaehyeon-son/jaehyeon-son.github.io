@@ -19,8 +19,6 @@ This includes:
 I am a PhD applicant in this application cycle and will be in Vancouver for NeurIPS 2024 between Dec. 9 - 16.
 Feel free to connect with me!
 
-<!-- Here's my <a href="https://drive.google.com/file/d/1Vwdy9AjydgEzJSiGcJOn0VigXRFqRk4V/view" style="color: #7289da; text-decoration:none">**CV**. -->
-
 ## Education
 
 -   **B.S.** in **Statistics** and **Artificial Intelligence**, <a href="https://en.snu.ac.kr/" style="color: #7289da; text-decoration: none;">**Seoul National University**</a> \\
