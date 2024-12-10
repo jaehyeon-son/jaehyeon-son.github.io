@@ -12,9 +12,9 @@ Hi! I'm currently a research intern at <a href="https://vision.snu.ac.kr/" style
 
 My research interest primarily lies in developing robust agents capable of learning through trial and error.
 This includes:
--   In-context RL, offline RL
--   LLM and VLM agents
--   Continual learning
+-   in-context RL, offline RL
+-   LLM//VLM agents
+-   continual learning
 
 I am a PhD applicant in this application cycle and will be in Vancouver for NeurIPS 2024 from Dec. 9 - 16.
 Feel free to connect with me!
