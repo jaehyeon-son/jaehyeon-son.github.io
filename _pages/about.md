@@ -59,8 +59,8 @@ Feel free to connect with me!
 
 ## Honors & Awards
 
--   Songam Scholarship \\
-    Mar. 2017 - Feb. 2023
-
 -   Honor of Summa Cum Laude \\
     Aug. 2023
+
+-   Songam Scholarship \\
+    Mar. 2017 - Feb. 2023
