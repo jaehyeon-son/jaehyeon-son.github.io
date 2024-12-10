@@ -33,7 +33,7 @@ Feel free to connect with me!
 -   **Distilling Reinforcement Learning Algorithms for In-Context Model-Based Planning** \\
     <u>Jaehyeon Son</u>, Soochan Lee, Gunhee Kim\\
     <span style="color:darkred">**Preprint**</span> \\
-    <a href="icrl-mb-preprint.pdf" style="color: #7289da; text-decoration: none;">[paper]</a>
+    <a href="_pages/icrl-mb-preprint.pdf" style="color: #7289da; text-decoration: none;">[paper]</a>
 
 -   **When Meta-Learning Meets Online and Continual Learning: A Survey** \\
     <u>Jaehyeon Son</u>\*, Soochan Lee\*, Gunhee Kim (\*: equal contribution)\\
