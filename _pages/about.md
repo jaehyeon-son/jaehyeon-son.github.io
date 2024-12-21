@@ -16,8 +16,6 @@ This includes:
 -   LLM/VLM agents
 -   continual learning
 
-I am a PhD applicant in this application cycle and will be in Vancouver for NeurIPS 2024 during Dec. 9 - 16.
-Feel free to connect with me!
 
 ## Education
 
