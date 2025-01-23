@@ -8,7 +8,7 @@ redirect_from:
     - /about.html
 ---
 
-Hi! I'm currently a research intern at <a href="https://vision.snu.ac.kr/" style="color: #7289da; text-decoration:none">**Vision & Learning Lab**</a>, under the supervision of Prof. <a href="https://vision.snu.ac.kr/gunhee/" style="color: #7289da; text-decoration:none">**Gunhee Kim**</a>.
+Hi! I'm currently a researcher at <a href="https://vision.snu.ac.kr/" style="color: #7289da; text-decoration:none">**Vision & Learning Lab**</a>, under the supervision of Prof. <a href="https://vision.snu.ac.kr/gunhee/" style="color: #7289da; text-decoration:none">**Gunhee Kim**</a>.
 
 My research interest primarily lies in developing robust agents capable of learning through trial and error.
 This includes:
@@ -28,8 +28,8 @@ This includes:
 
 -   **Distilling Reinforcement Learning Algorithms for In-Context Model-Based Planning** \\
     <u>Jaehyeon Son</u>, Soochan Lee, Gunhee Kim\\
-    <span style="color:darkred">**Preprint**</span> \\
-    <a href="_pages/icrl-mb-preprint.pdf" style="color: #7289da; text-decoration: none;">[paper]</a>
+    <span style="color:darkred">**ICLR 2025**</span> \\
+    <a href="https://openreview.net/forum?id=BfUugGfBE5&noteId=BfUugGfBE5" style="color: #7289da; text-decoration: none;">[paper]</a>
 
 -   **When Meta-Learning Meets Online and Continual Learning: A Survey** \\
     <u>Jaehyeon Son</u>\*, Soochan Lee\*, Gunhee Kim (\*: equal contribution)\\
