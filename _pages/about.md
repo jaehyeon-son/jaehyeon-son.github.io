@@ -46,7 +46,7 @@ I’m particularly interested in:
 ## Experience
 
 -   <a href="https://www.krafton.ai/en/" style="color: #7289da; text-decoration: none;">Krafton</a> \\
-    Mar 2025 - Present\\
+    Mar. 2025 - Present\\
     AI Fellowship Intern
 
 -   <a href="https://vision.snu.ac.kr/" style="color: #7289da; text-decoration: none;">Vision & Learning Lab</a>, Seoul National University \\
