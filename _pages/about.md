@@ -22,24 +22,24 @@ I’m particularly interested in:
 
 -   Distilling Reinforcement Learning Algorithms for In-Context Model-Based Planning \\
     <u>Jaehyeon Son</u>, Soochan Lee, Gunhee Kim\\
-    <span style="color:darkred">**ICLR 2025**</span> \\
+    <span style="color:darkred">ICLR 2025</span> \\
     <a href="https://openreview.net/forum?id=BfUugGfBE5&noteId=BfUugGfBE5" style="color: #7289da; text-decoration: none;">[paper]</a>
     <a href="https://github.com/jaehyeon-son/dicp" style="color: #7289da; text-decoration: none;">[code]</a>
 
 -   When Meta-Learning Meets Online and Continual Learning: A Survey \\
     <u>Jaehyeon Son</u>\*, Soochan Lee\*, Gunhee Kim (\*: equal contribution)\\
-    <span style="color:darkred">**IEEE TPAMI 2024**</span> \\
+    <span style="color:darkred">IEEE TPAMI 2024</span> \\
     <a href="https://arxiv.org/abs/2311.05241" style="color: #7289da; text-decoration: none;">[paper]</a>
 
 -   Learning to Continually Learn with the Bayesian Principle \\
     Soochan Lee, Hyeonseong Jeon, <u>Jaehyeon Son</u>, Gunhee Kim \\
-    <span style="color:darkred">**ICML 2024**</span> \\
+    <span style="color:darkred">ICML 2024</span> \\
     <a href="https://arxiv.org/abs/2405.18758" style="color: #7289da; text-decoration: none;">[paper]</a>
     <a href="https://github.com/soochan-lee/SB-MCL" style="color: #7289da; text-decoration: none;">[code]</a>
 
 -   Recasting Continual Learning as Sequence Modeling \\
     Soochan Lee, <u>Jaehyeon Son</u>, Gunhee Kim \\
-    <span style="color:darkred">**NeurIPS 2023**</span> \\
+    <span style="color:darkred">NeurIPS 2023</span> \\
     <a href="https://arxiv.org/abs/2310.11952" style="color: #7289da; text-decoration: none;">[paper]</a>
     <a href="https://github.com/soochan-lee/cl-as-seq" style="color: #7289da; text-decoration: none;">[code]</a>
 
