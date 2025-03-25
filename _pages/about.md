@@ -14,7 +14,7 @@ Previously, I was an undergraduate researcher at Seoul National University, advi
 
 My research focuses on developing embodied AI agents that learn through trial and error.
 I’m particularly interested in:
--   LLM/VLM agents
+-   LLM/VLM Agents
 -   Vision-Language-Action Models
 -   Reinforcement Learning
 
