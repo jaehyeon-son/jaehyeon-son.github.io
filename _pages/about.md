@@ -23,7 +23,7 @@ I’m particularly interested in:
 -   Distilling Reinforcement Learning Algorithms for In-Context Model-Based Planning \\
     <u>Jaehyeon Son</u>, Soochan Lee, Gunhee Kim\\
     <span style="color:darkred">ICLR 2025</span> \\
-    <a href="https://openreview.net/forum?id=BfUugGfBE5&noteId=BfUugGfBE5" style="color: #7289da; text-decoration: none;">[paper]</a>
+    <a href="https://arxiv.org/abs/2502.19009" style="color: #7289da; text-decoration: none;">[paper]</a>
     <a href="https://github.com/jaehyeon-son/dicp" style="color: #7289da; text-decoration: none;">[code]</a>
 
 -   When Meta-Learning Meets Online and Continual Learning: A Survey \\
