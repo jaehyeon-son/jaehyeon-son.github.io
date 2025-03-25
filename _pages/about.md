@@ -50,11 +50,11 @@ I’m particularly interested in:
     AI Fellowship Intern
 
 -   <a href="https://vision.snu.ac.kr/" style="color: #7289da; text-decoration: none;">Vision & Learning Lab</a>, Seoul National University \\
-    Jul 2022 - Mar 2025 \\
+    Jul. 2022 - Mar. 2025 \\
     Undergraduate Researcher
 
 -   <a href="https://kr.ncsoft.com/en/" style="color: #7289da; text-decoration: none;">NCSOFT</a> \\
-    Jul 2021 - Aug 2021 \\
+    Jul. 2021 - Aug. 2021 \\
     Research Intern
 
 ## Education
@@ -63,7 +63,7 @@ I’m particularly interested in:
     Fall 2025
 
 -   B.S. in Statistics and Artificial Intelligence, Seoul National University \\
-    Mar. 2017 - Aug. 2023 (Leave of absence for military service: Mar. 2019 - Feb. 2021)
+    Mar. 2017 - Aug. 2023
 
 ## Honors & Awards
 
