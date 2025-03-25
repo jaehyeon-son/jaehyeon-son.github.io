@@ -45,7 +45,7 @@ I’m particularly interested in:
 
 ## Experience
 
--   <a href="https://www.krafton.ai/en/" style="color: #7289da; text-decoration: none;">Krafton AI</a> \\
+-   <a href="https://www.krafton.ai/en/" style="color: #7289da; text-decoration: none;">Krafton</a> \\
     Mar 2025 - Present\\
     AI Fellowship Intern
 
