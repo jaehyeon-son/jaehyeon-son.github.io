@@ -42,10 +42,18 @@ I’m particularly interested in:
     <a href="https://arxiv.org/abs/2310.11952" style="color: #7289da; text-decoration: none;">[paper]</a>
     <a href="https://github.com/soochan-lee/cl-as-seq" style="color: #7289da; text-decoration: none;">[code]</a>
 
+## Education
+
+-   Ph.D. student in Machine Learning, Georgia Institute of Technology \\
+    Fall 2025 - Present
+
+-   B.S. in Statistics and Artificial Intelligence, Seoul National University \\
+    Mar. 2017 - Aug. 2023
+
 ## Experience
 
 -   <a href="https://www.krafton.ai/en/" style="color: #7289da; text-decoration: none;">Krafton</a> \\
-    Mar. 2025 - Present\\
+    Mar. 2025 - Aug. 2025\\
     AI Fellowship Intern
 
 -   <a href="https://vision.snu.ac.kr/" style="color: #7289da; text-decoration: none;">Vision & Learning Lab</a>, Seoul National University \\
@@ -55,14 +63,6 @@ I’m particularly interested in:
 -   <a href="https://kr.ncsoft.com/en/" style="color: #7289da; text-decoration: none;">NCSOFT</a> \\
     Jul. 2021 - Aug. 2021 \\
     Research Intern
-
-## Education
-
--   Incoming Ph.D. student in Machine Learning, Georgia Institute of Technology \\
-    Fall 2025
-
--   B.S. in Statistics and Artificial Intelligence, Seoul National University \\
-    Mar. 2017 - Aug. 2023
 
 ## Honors & Awards
 
