@@ -8,14 +8,13 @@ redirect_from:
     - /about.html
 ---
 
-Hi! I'm an incomping Ph.D. student in Machine Learning at Georgia Tech, where I’ll be advised by <a href="https://faculty.cc.gatech.edu/~zk15/" style="color: #7289da; text-decoration:none">Prof. Zsolt Kira</a>.
-Currently, I’m an AI Fellowship Intern at <a href="https://www.krafton.ai/en/" style="color: #7289da; text-decoration:none">Krafton AI</a>.
-Previously, I was an undergraduate researcher at Seoul National University, advised by <a href="https://vision.snu.ac.kr/gunhee/" style="color: #7289da; text-decoration:none">Prof. Gunhee Kim</a>.
+Hi! I'm a Ph.D. student in Machine Learning at Georgia Tech, where I'm advised by <a href="https://faculty.cc.gatech.edu/~zk15/" style="color: #7289da; text-decoration:none">Prof. Zsolt Kira</a>.
+Previously, I was an undergraduate researcher at Seoul National University, where I worked with <a href="https://vision.snu.ac.kr/gunhee/" style="color: #7289da; text-decoration:none">Prof. Gunhee Kim</a>.
 
 My research focuses on developing embodied AI agents that learn through trial and error.
 I’m particularly interested in:
--   LLM/VLM Agents
 -   Vision-Language-Action Models
+-   LLM/VLM Agents
 -   Reinforcement Learning
 
 ## Publications
