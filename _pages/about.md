@@ -45,7 +45,7 @@ I’m particularly interested in:
 ## Education
 
 -   Ph.D. in Machine Learning, Georgia Institute of Technology \\
-    Fall 2025 - Present
+    Aug. 2025 - Present
 
 -   B.S. in Statistics and Artificial Intelligence, Seoul National University \\
     Mar. 2017 - Aug. 2023
