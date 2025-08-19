@@ -8,7 +8,7 @@ redirect_from:
     - /about.html
 ---
 
-Hi! I'm a Ph.D. student in Machine Learning at Georgia Tech, where I'm advised by <a href="https://faculty.cc.gatech.edu/~zk15/" style="color: #7289da; text-decoration:none">Prof. Zsolt Kira</a>.
+Hi! I'm a first-year Ph.D. student in Machine Learning at Georgia Tech, where I'm advised by <a href="https://faculty.cc.gatech.edu/~zk15/" style="color: #7289da; text-decoration:none">Prof. Zsolt Kira</a>.
 Previously, I was an undergraduate researcher at Seoul National University, where I worked with <a href="https://vision.snu.ac.kr/gunhee/" style="color: #7289da; text-decoration:none">Prof. Gunhee Kim</a>.
 
 My research focuses on developing embodied AI agents that learn through trial and error.
