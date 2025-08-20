@@ -21,7 +21,7 @@ I’m particularly interested in:
 
 -   FlashAdventure: A Benchmark for GUI Agents Solving Full Story Arcs in Diverse Adventure Games \\
     Jaewoo Ahn\*, Junseo Kim\*, Heeseung Yun, <u>Jaehyeon Son</u>, Dongmin Park, Jaewoong Cho, Gunhee Kim \\
-    <span style="color:darkred">EMNLP 2025</span> \\
+    <span style="color:darkred">EMNLP 2025</span>
 
 -   Distilling Reinforcement Learning Algorithms for In-Context Model-Based Planning \\
     <u>Jaehyeon Son</u>, Soochan Lee, Gunhee Kim\\
