@@ -19,6 +19,10 @@ I’m particularly interested in:
 
 ## Publications
 
+-   FlashAdventure: A Benchmark for GUI Agents Solving Full Story Arcs in Diverse Adventure Games \\
+    Jaewoo Ahn\*, Junseo Kim\*, Heeseung Yun, <u>Jaehyeon Son</u>, Dongmin Park, Jaewoong Cho, Gunhee Kim \\
+    <span style="color:darkred">EMNLP 2025</span> \\
+
 -   Distilling Reinforcement Learning Algorithms for In-Context Model-Based Planning \\
     <u>Jaehyeon Son</u>, Soochan Lee, Gunhee Kim\\
     <span style="color:darkred">ICLR 2025</span> \\
@@ -26,7 +30,7 @@ I’m particularly interested in:
     <a href="https://github.com/jaehyeon-son/dicp" style="color: #7289da; text-decoration: none;">[code]</a>
 
 -   When Meta-Learning Meets Online and Continual Learning: A Survey \\
-    <u>Jaehyeon Son</u>\*, Soochan Lee\*, Gunhee Kim (\*: equal contribution)\\
+    <u>Jaehyeon Son</u>\*, Soochan Lee\*, Gunhee Kim\\
     <span style="color:darkred">IEEE TPAMI 2024</span> \\
     <a href="https://arxiv.org/abs/2311.05241" style="color: #7289da; text-decoration: none;">[paper]</a>
 
