@@ -71,7 +71,7 @@ I’m particularly interested in:
 
 ## Honors & Awards
 
--   The Korean Government Scholarship Program for Study Overseas \\
+-   Korean Government Scholarship for Study Overseas \\
     Aug. 2025 - Aug. 2027
 
 -   Krafton AI Fellowship \\
