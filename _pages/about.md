@@ -52,6 +52,7 @@ I’m particularly interested in:
     Aug. 2025 - Present
 
 -   B.S. in Statistics and Artificial Intelligence, Seoul National University \\
+    <span style="color:darkred">Summa Cum Laude</span> \\
     Mar. 2017 - Aug. 2023
 
 ## Experience
@@ -70,11 +71,11 @@ I’m particularly interested in:
 
 ## Honors & Awards
 
+-   The Korean Government Scholarship Program for Study Overseas \\
+    Aug. 2025 - Aug. 2027
+
 -   Krafton AI Fellowship \\
     Feb. 2025
-
--   Honor of Summa Cum Laude \\
-    Aug. 2023
 
 -   Songam Scholarship \\
     Mar. 2017 - Feb. 2023
