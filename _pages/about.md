@@ -22,8 +22,8 @@ I’m particularly interested in:
 -   FlashAdventure: A Benchmark for GUI Agents Solving Full Story Arcs in Diverse Adventure Games \\
     Jaewoo Ahn\*, Junseo Kim\*, Heeseung Yun, <u>Jaehyeon Son</u>, Dongmin Park, Jaewoong Cho, Gunhee Kim \\
     <span style="color:darkred">EMNLP 2025</span> \\
-    <a href="https://arxiv.org/abs/2509.01052" style="color: #7289da; text-decoration: none;">[paper]</a>
     <a href="https://ahnjaewoo.github.io/flashadventure/" style="color: #7289da; text-decoration: none;">[project]</a>
+    <a href="https://arxiv.org/abs/2509.01052" style="color: #7289da; text-decoration: none;">[paper]</a>
     <a href="https://github.com/ahnjaewoo/FlashAdventure" style="color: #7289da; text-decoration: none;">[code]</a>
 
 -   Distilling Reinforcement Learning Algorithms for In-Context Model-Based Planning \\
