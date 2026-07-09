@@ -22,7 +22,9 @@ I’m particularly interested in:
 -   SeeTraceAct: Visibility-Aware Latent Planning from Cross-Embodiment Demonstration Videos \\
     <u>Jaehyeon Son</u>, Junhyun Kim, Kyle Kam, Jeremiah Coholich, Seok Joon Kim, Jinhoo Kim, Chris Dongjoo Kim, Jaemin Cho, Dieter Fox, Zsolt Kira \\
     <span style="color:darkred">Preprint</span> \\
+    <a href="https://jaehyeon-son.github.io/seetraceact/" style="color: #7289da; text-decoration: none;">[project]</a>
     <a href="https://arxiv.org/abs/2606.02745" style="color: #7289da; text-decoration: none;">[paper]</a>
+    
 
 -   FlashAdventure: A Benchmark for GUI Agents Solving Full Story Arcs in Diverse Adventure Games \\
     Jaewoo Ahn\*, Junseo Kim\*, Heeseung Yun, <u>Jaehyeon Son</u>, Dongmin Park, Jaewoong Cho, Gunhee Kim \\

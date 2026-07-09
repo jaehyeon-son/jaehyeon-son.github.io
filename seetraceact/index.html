@@ -7,7 +7,7 @@
   <title>SeeTraceAct</title>
   <meta
     name="description"
-    content="SeeTraceAct project page. Replace this placeholder description with a short summary of your project."
+    content="SeeTraceAct is a demo-conditioned vision-language-action (VLA) framework that grounds one-shot demonstration videos through visibility-aware prediction of future end-effector traces, with the RoboCasa-DC benchmark for cross-embodiment evaluation."
   >
 
   <style>
@@ -206,7 +206,6 @@
       margin-top: 12px;
       color: var(--muted);
       font-size: 0.92rem;
-      text-align: center;
     }
 
     .grid {
@@ -230,6 +229,45 @@
     .result-card p {
       margin: 0;
       color: var(--muted);
+    }
+
+    .table-wrap {
+      overflow-x: auto;
+    }
+
+    table {
+      width: 100%;
+      margin: 8px 0 4px;
+      border-collapse: collapse;
+      font-size: 0.95rem;
+    }
+
+    th,
+    td {
+      padding: 10px 14px;
+      text-align: center;
+      border-bottom: 1px solid var(--border);
+      white-space: nowrap;
+    }
+
+    th:first-child,
+    td:first-child {
+      text-align: left;
+    }
+
+    thead th {
+      color: var(--muted);
+      font-weight: 600;
+    }
+
+    tbody tr.ours {
+      background: rgba(37, 99, 235, 0.06);
+      font-weight: 700;
+    }
+
+    td .best {
+      font-weight: 700;
+      color: var(--accent);
     }
 
     pre {
@@ -294,99 +332,269 @@
 
       <nav class="links" aria-label="Project resources">
         <a class="button" href="https://arxiv.org/abs/2606.02745" aria-label="Paper link">Paper</a>
-        <a class="button secondary" href="#" aria-label="Code repository link">Code</a>
-        <a class="button secondary" href="#" aria-label="Dataset link">Dataset</a>
+        <a class="button secondary" href="https://github.com/jaehyeon-son/SeeTraceAct" aria-label="Code repository link">Code</a>
+        <a class="button secondary" href="https://github.com/jaehyeon-son/SeeTraceAct" aria-label="Dataset link">Dataset</a>
         <!-- <a class="button secondary" href="#" aria-label="Video link">Video</a> -->
       </nav>
     </div>
   </header>
 
   <main class="container">
-    <!-- <section aria-labelledby="teaser-heading">
+    <section aria-labelledby="teaser-heading">
       <h2 id="teaser-heading">Overview</h2>
 
-      <div class="media-placeholder">
-        <div>
-          <strong>Teaser image or video placeholder</strong>
-          <br>
-          Replace this block with an image, GIF, or video from
-          <code>./assets/</code>.
-        </div>
+      <div class="card">
+        <img
+          src="./assets/teaser.png"
+          alt="Overview of SeeTraceAct: the policy observes a one-shot demonstration video, camera views, and a language instruction (See), predicts future end-effector traces and their visibility during training (Trace), and generates actions from the visual latent plan (Act)."
+        >
+
+        <p class="caption">
+          <strong>Overview of SeeTraceAct.</strong> Given a demonstration video, current camera
+          views, and a language instruction, the policy encodes task-relevant information into a
+          <em>visual latent plan</em> (<strong>See</strong>). During training, the policy predicts
+          future visual traces and their visibility for each camera view (<strong>Trace</strong>),
+          while also predicting actions from the latent plan (<strong>Act</strong>). At inference
+          time, the trace prediction component is discarded, and the policy generates actions from
+          the latent plan (<strong>Act</strong>).
+        </p>
       </div>
+    </section>
 
-      <p class="caption">
-        Add a short caption that explains the main result shown above.
-      </p> -->
-
-      <!-- Example:
-      <img
-        src="./assets/teaser.png"
-        alt="Overview of the SeeTraceAct method"
-      >
-      -->
-    <!-- </section> -->
-
-    <section class="card" aria-labelledby="abstract-heading">
+    <section aria-labelledby="abstract-heading">
       <h2 id="abstract-heading">Abstract</h2>
 
+      <div class="card">
       <p>
         Vision-language-action models (VLAs) are promising general-purpose robot policies, but adapting them to new tasks typically requires costly task-specific teleoperation data. As an alternative, we study one-shot demo-conditioned VLAs, where a robot policy is conditioned on a single demonstration video of an unseen task. We find that existing end-to-end approaches often struggle when successful execution requires precisely localizing small target regions. To address this limitation, we propose SeeTraceAct, a demo-conditioned VLA framework that encourages precise spatial grounding through visibility-aware prediction of future end-effector traces. To enable reproducible evaluation with cross-embodiment demonstrations, we introduce and release RoboCasa-DC, a demo-conditioned extension of RoboCasa with episode-paired humanoid videos. Experiments on RoboCasa-DC and a real-world benchmark, where a Franka Panda arm is conditioned on human demonstrations, show that SeeTraceAct outperforms baselines, achieving the best success rate across all four RoboCasa-DC settings and improving real-world average success by 12.5 percentage points.
       </p>
+      </div>
     </section>
 
-    <!-- <section aria-labelledby="method-heading">
+    <section aria-labelledby="method-heading">
       <h2 id="method-heading">Method</h2>
 
       <div class="card">
-        <div class="media-placeholder">
-          <div>
-            <strong>Method diagram placeholder</strong>
-            <br>
-            Suggested path:
-            <code>./assets/method.png</code>
-          </div>
+        <img
+          src="./assets/method.png"
+          alt="Architecture of SeeTraceAct: camera views, a language instruction, and a demonstration video are encoded into a vision-language model; learnable query tokens form a visual latent plan that feeds a flow-matching action expert and, during training, a visibility-aware trace decoder with regression and validity heads."
+        >
+
+        <p class="caption">
+          <strong>Architecture of SeeTraceAct.</strong> The model receives camera views, a
+          language instruction, a demonstration video, and robot states, and outputs an action
+          chunk. Learnable query tokens are appended after the input tokens; their final hidden
+          states form a <em>visual latent plan</em>, which is decoded into future end-effector
+          traces during training. The trace decoder is used only during training and discarded at
+          inference time.
+        </p>
+
+        <p>
+          SeeTraceAct builds on the GR00T N1.5 architecture, which pairs a vision-language model
+          (VLM) with a flow-matching action expert, and augments it with three components:
+        </p>
+
+        <p>
+          <strong>Video tokens.</strong> The demonstration video is encoded with an action-aware
+          video encoder (V-JEPA 2) and compressed by a Perceiver Resampler into a compact set of
+          32 video tokens appended to the VLM input. Under causal attention, the video tokens
+          attend to the image and language tokens, making the demonstration representation
+          context-dependent rather than fixed across the episode.
+        </p>
+
+        <p>
+          <strong>Visual latent plan.</strong> A separate set of learnable query tokens is
+          appended after the input tokens. These query tokens attend to the image, language, and
+          video tokens, and their final hidden states constitute a latent representation trained
+          to encode future task progression, which conditions action generation.
+        </p>
+
+        <p>
+          <strong>Visibility-aware trace decoder.</strong> During training, the latent plan is
+          decoded into future end-effector traces in each static camera view. Because the end
+          effector may leave some views, making its 2D coordinates ill-posed regression targets,
+          the decoder uses two heads: a regression head that predicts normalized trace
+          coordinates and a validity head that predicts whether each trace point lies within the
+          image — so off-screen points still provide a learning signal. The policy is trained with
+          a flow-matching action prediction loss plus this auxiliary visual trace loss, and the
+          trace decoder is discarded after training.
+        </p>
+      </div>
+    </section>
+
+    <section aria-labelledby="benchmark-heading">
+      <h2 id="benchmark-heading">RoboCasa-DC Benchmark</h2>
+
+      <div class="card">
+        <img
+          src="./assets/robocasa_dc.png"
+          alt="RoboCasa-DC cross-embodiment benchmark: for each of 24 tasks, 100 Panda-arm trajectories are paired with GR-1 humanoid demonstrations for training, and humanoid demonstrations are collected for 50 pre-defined evaluation seeds per task."
+        >
+
+        <p class="caption">
+          <strong>Cross-embodiment benchmark dataset in RoboCasa-DC.</strong> For each of the 24
+          tasks, we pair 100 original Panda-arm trajectories with collected GR-1 humanoid
+          demonstrations for training. For evaluation, we collect humanoid demonstrations for 50
+          pre-defined seeds per task.
+        </p>
+
+        <p>
+          RoboCasa-DC extends the RoboCasa simulation environment with episode-paired
+          demonstrations for demo-conditioned policy learning. It supports both
+          <strong>same-embodiment</strong> evaluation, where videos from Panda-arm trajectories
+          serve as demonstrations, and <strong>cross-embodiment</strong> evaluation, where
+          teleoperated GR-1 humanoid videos act as a simulated proxy for real-world human
+          demonstrations. An evaluation split partitions the 24 tasks into seen training tasks and
+          unseen evaluation tasks; at test time, each policy is conditioned on a single
+          demonstration video paired with each evaluation seed. We publicly release RoboCasa-DC to
+          support reproducible evaluation and future work on demo-conditioned policies.
+        </p>
+      </div>
+    </section>
+
+    <section aria-labelledby="results-heading">
+      <h2 id="results-heading">Results</h2>
+
+      <div class="card">
+        <h3>RoboCasa-DC Benchmark</h3>
+
+        <p>
+          SeeTraceAct achieves the best success rate across all four evaluation settings, covering
+          both category-balanced and precision-sensitive splits under same- and cross-embodiment
+          demonstrations, with the largest margin in the precision-sensitive cross-embodiment
+          setting.
+        </p>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th rowspan="2">Method</th>
+                <th colspan="2">Category-balanced split</th>
+                <th colspan="2">Precision-sensitive split</th>
+              </tr>
+              <tr>
+                <th>Same-emb demo</th>
+                <th>Cross-emb demo</th>
+                <th>Same-emb demo</th>
+                <th>Cross-emb demo</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Vid2Robot</td>
+                <td>21.5%</td>
+                <td>8.8%</td>
+                <td>12.6%</td>
+                <td>6.4%</td>
+              </tr>
+              <tr>
+                <td>UniSkill</td>
+                <td>13.3%</td>
+                <td>11.2%</td>
+                <td>10.4%</td>
+                <td>6.0%</td>
+              </tr>
+              <tr>
+                <td>ViVLA</td>
+                <td>14.4%</td>
+                <td>8.0%</td>
+                <td>8.9%</td>
+                <td>8.4%</td>
+              </tr>
+              <tr class="ours">
+                <td>SeeTraceAct (Ours)</td>
+                <td><span class="best">23.0%</span></td>
+                <td><span class="best">11.6%</span></td>
+                <td><span class="best">14.1%</span></td>
+                <td><span class="best">12.8%</span></td>
+              </tr>
+            </tbody>
+          </table>
         </div>
 
         <p class="caption">
-          Describe the major components of SeeTraceAct and how information flows
-          through the system.
+          Success rates averaged over the five unseen tasks in each split, with 50 evaluation
+          episodes per task. In <em>Same-emb demo</em>, policies are conditioned on demonstrations
+          from the same Panda-arm embodiment; in <em>Cross-emb demo</em>, policies are conditioned
+          on simulated GR-1 humanoid demonstrations as a proxy for human videos.
         </p>
       </div>
-    </section> -->
 
-    <!-- <section aria-labelledby="results-heading">
-      <h2 id="results-heading">Results</h2>
+      <div class="card" style="margin-top: 18px;">
+        <h3>Real-World Benchmark</h3>
 
-      <div class="grid">
+        <p>
+          We evaluate demo-conditioned policies on real-world tabletop manipulation with a Franka
+          Panda arm, conditioning each policy on a one-shot human demonstration video. Policies are
+          trained on four seen tasks and evaluated on four unseen tasks designed by recombining
+          seen skills and objects, introducing a new contact interaction, and swapping the source
+          and target objects.
+        </p>
+
+        <img
+          src="./assets/real_tasks.png"
+          alt="Real-world benchmark tasks: four seen tasks (Pick Coke, Stack Blocks, Stack Cups, Close Laptop) and four unseen tasks (Pick Block, Pick Cup, Press Button, Stack Blocks in Swapped Order), each with a yellow arrow indicating the desired end-effector path."
+        >
+
+        <p class="caption">
+          Four seen tasks (top) and four unseen tasks (bottom) in the real-world benchmark. The
+          yellow arrow indicates the desired path of the end effector.
+        </p>
+
+        <img
+          src="./assets/real_results.png"
+          alt="Bar chart of real-world success rates: SeeTraceAct achieves the best success rate on all four unseen tasks and improves the average from 37.5% to 50.0% over the strongest baseline."
+          style="margin-top: 24px;"
+        >
+
+        <p class="caption">
+          Success rates over 10 trials for each of the four unseen tasks, along with their
+          average. SeeTraceAct achieves the strongest performance across all four unseen tasks,
+          improving average success from 37.5% to 50.0% over the strongest baseline.
+        </p>
+      </div>
+
+      <div class="grid" style="margin-top: 18px;">
         <article class="result-card">
-          <h3>Quantitative result</h3>
+          <h3>Larger gains on precision-sensitive tasks</h3>
           <p>
-            Add a key metric, table, or comparison against a baseline.
+            Across all 24 RoboCasa-DC tasks, the target interaction ratio (TIR) — the fraction of
+            the image covered by the target interaction region — is negatively correlated with
+            SeeTraceAct's gain over every baseline (Spearman ρ = −0.63, p &lt; 10⁻³ vs. the
+            strongest baseline per task), showing that trace supervision helps most when success
+            depends on localizing small target regions.
           </p>
         </article>
 
         <article class="result-card">
-          <h3>Qualitative result</h3>
+          <h3>Trace supervision is the key ingredient</h3>
           <p>
-            Add an example, visualization, or short explanation of model behavior.
+            In the cross-embodiment setting, removing trace supervision drops success from 12.2%
+            to 9.4% — close to the 9.0% of the GR00T N1.5 backbone without demonstrations —
+            showing that simply adding demonstration inputs is not sufficient.
           </p>
         </article>
 
         <article class="result-card">
-          <h3>Ablation study</h3>
+          <h3>Visibility awareness matters</h3>
           <p>
-            Summarize which parts of the method contribute most to performance.
+            Removing the validity head causes the largest degradation among ablations (12.2% →
+            8.2%): forcing the model to regress ill-defined off-screen coordinates hurts
+            representation learning.
           </p>
         </article>
 
         <article class="result-card">
-          <h3>Additional analysis</h3>
+          <h3>Design choices for encoding and traces</h3>
           <p>
-            Add robustness tests, limitations, or failure cases.
+            Replacing the action-aware V-JEPA 2 video encoder with the backbone's SigLIP encoder
+            lowers success to 9.2%, and 3D trace supervision (10.4%) lags behind 2D image-space
+            traces, which better match the model's visual inputs.
           </p>
         </article>
       </div>
-    </section> -->
+    </section>
 
     <!-- <section aria-labelledby="video-heading">
       <h2 id="video-heading">Video</h2>
@@ -409,15 +617,17 @@
       -->
     <!-- </section> -->
 
-    <section class="card" aria-labelledby="citation-heading">
+    <section aria-labelledby="citation-heading">
       <h2 id="citation-heading">Citation</h2>
 
+      <div class="card">
       <pre><code>@article{son2026seetraceact,
   title   = {SeeTraceAct: Visibility-Aware Latent Planning from Cross-Embodiment Demonstration Videos},
   author  = {Son, Jaehyeon and Kim, Junhyun and Kam, Kyle and Coholich, Jeremiah and Kim, Seok Joon and Kim, Jinhoo and Kim, Chris Dongjoo and Cho, Jaemin and Fox, Dieter and Kira, Zsolt},
   journal = {arXiv preprint},
   year    = {2026}
 }</code></pre>
+      </div>
     </section>
 
   </main>
