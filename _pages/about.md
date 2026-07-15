@@ -69,7 +69,7 @@ I’m particularly interested in:
 ## Experience
 
 -   <a href="https://allenai.org/" style="color: #7289da; text-decoration: none;">Ai2</a> \\
-    Jul. 2025 - Present\\
+    Jul. 2026 - Present\\
     Student Researcher
 
 -   <a href="https://www.krafton.ai/en/" style="color: #7289da; text-decoration: none;">Krafton</a> \\
