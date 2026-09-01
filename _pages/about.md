@@ -21,7 +21,7 @@ I’m particularly interested in:
 ## Publications
 
 -   Lies We Can See: Joint Verbal and Non-Verbal Deception by VLM Agents in Embodied Social Interactions \\
-    Jaewoo Ahn, Junseo Kim, Hyunseo Kim, Heeseung Yun, <u>Jaehyeon Son</u>, Zsolt Kira, Gunhee Kim
+    Jaewoo Ahn, Junseo Kim, Hyunseo Kim, Heeseung Yun, <u>Jaehyeon Son</u>, Zsolt Kira, Gunhee Kim \\
     <span style="color:darkred">Preprint</span> \\
     <a href="https://junseokim0103.github.io/Lies-We-Can-See/" style="color: #7289da; text-decoration: none;">[project]</a>
     <a href="https://arxiv.org/abs/2608.30428" style="color: #7289da; text-decoration: none;">[paper]</a>
