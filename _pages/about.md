@@ -20,6 +20,13 @@ I’m particularly interested in:
 
 ## Publications
 
+-   SeeTraceAct: Visibility-Aware Latent Planning from Cross-Embodiment Demonstration Videos \\
+    <u>Jaehyeon Son</u>, Junhyun Kim, Kyle Kam, Jeremiah Coholich, Seok Joon Kim, Jinhoo Kim, Chris Dongjoo Kim, Jaemin Cho, Dieter Fox, Zsolt Kira \\
+    <span style="color:darkred">CoRL 2026</span> \\
+    <a href="https://jaehyeon-son.github.io/seetraceact/" style="color: #7289da; text-decoration: none;">[project]</a>
+    <a href="https://arxiv.org/abs/2606.02745" style="color: #7289da; text-decoration: none;">[paper]</a>
+
+
 -   Lies We Can See: Joint Verbal and Non-Verbal Deception by VLM Agents in Embodied Social Interactions \\
     Jaewoo Ahn, Junseo Kim, Hyunseo Kim, Heeseung Yun, <u>Jaehyeon Son</u>, Zsolt Kira, Gunhee Kim \\
     <span style="color:darkred">Preprint</span> \\
@@ -27,11 +34,6 @@ I’m particularly interested in:
     <a href="https://arxiv.org/abs/2608.30428" style="color: #7289da; text-decoration: none;">[paper]</a>
     <a href="https://github.com/JunseoKim0103/Lies-We-Can-See" style="color: #7289da; text-decoration: none;">[code]</a>
 
--   SeeTraceAct: Visibility-Aware Latent Planning from Cross-Embodiment Demonstration Videos \\
-    <u>Jaehyeon Son</u>, Junhyun Kim, Kyle Kam, Jeremiah Coholich, Seok Joon Kim, Jinhoo Kim, Chris Dongjoo Kim, Jaemin Cho, Dieter Fox, Zsolt Kira \\
-    <span style="color:darkred">Preprint</span> \\
-    <a href="https://jaehyeon-son.github.io/seetraceact/" style="color: #7289da; text-decoration: none;">[project]</a>
-    <a href="https://arxiv.org/abs/2606.02745" style="color: #7289da; text-decoration: none;">[paper]</a>
 
 -   FlashAdventure: A Benchmark for GUI Agents Solving Full Story Arcs in Diverse Adventure Games \\
     Jaewoo Ahn\*, Junseo Kim\*, Heeseung Yun, <u>Jaehyeon Son</u>, Dongmin Park, Jaewoong Cho, Gunhee Kim \\
