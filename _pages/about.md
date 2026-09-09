@@ -9,7 +9,7 @@ redirect_from:
 ---
 
 Hi! I'm a second-year Ph.D. student in Machine Learning at Georgia Tech, where I'm advised by <a href="https://faculty.cc.gatech.edu/~zk15/" style="color: #7289da; text-decoration:none">Prof. Zsolt Kira</a>.
-I am also currently a Student Researcher at Ai2.
+I am also currently a Student Researcher at Allen Institute for AI.
 Previously, I was an undergraduate researcher at Seoul National University, where I worked with <a href="https://vision.snu.ac.kr/gunhee/" style="color: #7289da; text-decoration:none">Prof. Gunhee Kim</a>.
 
 My research focuses on developing embodied AI agents that learn through trial and error.
@@ -76,7 +76,7 @@ I’m particularly interested in:
 
 ## Experience
 
--   <a href="https://allenai.org/" style="color: #7289da; text-decoration: none;">Ai2</a> \\
+-   <a href="https://allenai.org/" style="color: #7289da; text-decoration: none;">Allen Institute for AI</a> \\
     Jul. 2026 - Present\\
     Student Researcher
 
