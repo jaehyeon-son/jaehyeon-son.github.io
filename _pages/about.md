@@ -25,6 +25,8 @@ I’m particularly interested in:
     <span style="color:darkred">CoRL 2026</span> \\
     <a href="https://jaehyeon-son.github.io/seetraceact/" style="color: #7289da; text-decoration: none;">[project]</a>
     <a href="https://arxiv.org/abs/2606.02745" style="color: #7289da; text-decoration: none;">[paper]</a>
+    <a href="https://github.com/jaehyeon-son/SeeTraceAct" style="color: #7289da; text-decoration: none;">[code]</a>
+    <a href="https://huggingface.co/datasets/Sondroid/RoboCasa-DC" style="color: #7289da; text-decoration: none;">[dataset]</a>
 
 
 -   Lies We Can See: Joint Verbal and Non-Verbal Deception by VLM Agents in Embodied Social Interactions \\
