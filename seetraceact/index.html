@@ -7,7 +7,7 @@
   <title>SeeTraceAct</title>
   <meta
     name="description"
-    content="SeeTraceAct is a demo-conditioned vision-language-action (VLA) framework that grounds one-shot demonstration videos through visibility-aware prediction of future end-effector traces, with the RoboCasa-DC benchmark for cross-embodiment evaluation."
+    content="SeeTraceAct (CoRL 2026) is a demo-conditioned vision-language-action (VLA) framework that grounds one-shot demonstration videos through visibility-aware prediction of future end-effector traces, with the RoboCasa-DC benchmark for cross-embodiment evaluation."
   >
 
   <style>
@@ -81,7 +81,7 @@
     .eyebrow {
       margin: 0 0 12px;
       color: var(--accent);
-      font-size: 0.85rem;
+      font-size: 1.3rem;
       font-weight: 700;
       letter-spacing: 0.12em;
       text-transform: uppercase;
@@ -313,6 +313,8 @@
   <header>
     <div class="container">
 
+      <p class="eyebrow">CoRL 2026</p>
+
       <h1>SeeTraceAct: Visibility-Aware Latent Planning from Cross-Embodiment Demonstration Videos</h1>
 
       <p class="authors">
@@ -337,8 +339,8 @@
 
       <nav class="links" aria-label="Project resources">
         <a class="button" href="https://arxiv.org/abs/2606.02745" aria-label="Paper link">Paper</a>
-        <a class="button secondary" href="https://github.com/jaehyeon-son/SeeTraceAct" aria-label="Code repository link">Code</a>
-        <a class="button secondary" href="https://github.com/jaehyeon-son/SeeTraceAct" aria-label="Dataset link">Dataset</a>
+        <a class="button" href="https://github.com/jaehyeon-son/SeeTraceAct" aria-label="Code repository link">Code</a>
+        <a class="button" href="https://huggingface.co/datasets/Sondroid/RoboCasa-DC" aria-label="Dataset link">Dataset</a>
         <!-- <a class="button secondary" href="#" aria-label="Video link">Video</a> -->
       </nav>
     </div>
@@ -371,7 +373,7 @@
 
       <div class="card">
       <p>
-        Vision-language-action models (VLAs) are promising general-purpose robot policies, but adapting them to new tasks typically requires costly task-specific teleoperation data. As an alternative, we study one-shot demo-conditioned VLAs, where a robot policy is conditioned on a single demonstration video of an unseen task. We find that existing end-to-end approaches often struggle when successful execution requires precisely localizing small target regions. To address this limitation, we propose SeeTraceAct, a demo-conditioned VLA framework that encourages precise spatial grounding through visibility-aware prediction of future end-effector traces. To enable reproducible evaluation with cross-embodiment demonstrations, we introduce and release RoboCasa-DC, a demo-conditioned extension of RoboCasa with episode-paired humanoid videos. Experiments on RoboCasa-DC and a real-world benchmark, where a Franka Panda arm is conditioned on human demonstrations, show that SeeTraceAct outperforms baselines, achieving the best success rate across all four RoboCasa-DC settings and improving real-world average success by 12.5 percentage points.
+        Vision-language-action models (VLAs) are promising general-purpose robot policies, but adapting them to new tasks typically requires costly task-specific teleoperation data. As an alternative, we study one-shot demo-conditioned VLAs, where a robot policy is conditioned on a single demonstration video of an unseen task. We find that existing end-to-end approaches often struggle when successful execution requires precisely localizing small target regions. To address this limitation, we propose SeeTraceAct, a demo-conditioned VLA framework that encourages precise spatial grounding through visibility-aware prediction of future end-effector traces. To enable reproducible evaluation with cross-embodiment demonstrations, we introduce and release RoboCasa-DC, a demo-conditioned extension of RoboCasa that pairs its robot trajectories with newly collected humanoid demonstrations. Experiments on RoboCasa-DC and a real-world benchmark, where a Franka Panda arm is conditioned on human demonstrations, show that SeeTraceAct outperforms baselines, achieving the best success rate across all four RoboCasa-DC settings and improving real-world average success by 9.5 percentage points.
       </p>
       </div>
     </section>
@@ -449,9 +451,10 @@
           <strong>same-embodiment</strong> evaluation, where videos from Panda-arm trajectories
           serve as demonstrations, and <strong>cross-embodiment</strong> evaluation, where
           teleoperated GR-1 humanoid videos act as a simulated proxy for real-world human
-          demonstrations. An evaluation split partitions the 24 tasks into seen training tasks and
-          unseen evaluation tasks; at test time, each policy is conditioned on a single
-          demonstration video paired with each evaluation seed. We publicly release RoboCasa-DC to
+          demonstrations. Each evaluation split partitions the 24 tasks into 19 seen training
+          tasks and five unseen evaluation tasks; at test time, each policy is conditioned on a single
+          demonstration video paired with each evaluation seed. We publicly release
+          <a href="https://huggingface.co/datasets/Sondroid/RoboCasa-DC">RoboCasa-DC</a> to
           support reproducible evaluation and future work on demo-conditioned policies.
         </p>
       </div>
@@ -488,31 +491,31 @@
             <tbody>
               <tr>
                 <td>Vid2Robot</td>
-                <td>21.5%</td>
-                <td>8.8%</td>
-                <td>12.6%</td>
-                <td>6.4%</td>
+                <td>17.9%</td>
+                <td>9.5%</td>
+                <td>11.4%</td>
+                <td>5.6%</td>
               </tr>
               <tr>
                 <td>UniSkill</td>
-                <td>13.3%</td>
-                <td>11.2%</td>
-                <td>10.4%</td>
-                <td>6.0%</td>
+                <td>13.0%</td>
+                <td>11.3%</td>
+                <td>11.7%</td>
+                <td>5.6%</td>
               </tr>
               <tr>
                 <td>ViVLA</td>
-                <td>14.4%</td>
-                <td>8.0%</td>
-                <td>8.9%</td>
-                <td>8.4%</td>
+                <td>14.1%</td>
+                <td>9.1%</td>
+                <td>8.8%</td>
+                <td>7.2%</td>
               </tr>
               <tr class="ours">
                 <td>SeeTraceAct (Ours)</td>
-                <td><span class="best">23.0%</span></td>
+                <td><span class="best">18.9%</span></td>
                 <td><span class="best">11.6%</span></td>
-                <td><span class="best">14.1%</span></td>
-                <td><span class="best">12.8%</span></td>
+                <td><span class="best">13.2%</span></td>
+                <td><span class="best">10.8%</span></td>
               </tr>
             </tbody>
           </table>
@@ -520,7 +523,7 @@
 
         <p class="caption">
           Success rates averaged over the five unseen tasks in each split, with 50 evaluation
-          episodes per task. In <em>Same-emb demo</em>, policies are conditioned on demonstrations
+          episodes per task, further averaged over three independent runs. In <em>Same-emb demo</em>, policies are conditioned on demonstrations
           from the same Panda-arm embodiment; in <em>Cross-emb demo</em>, policies are conditioned
           on simulated GR-1 humanoid demonstrations as a proxy for human videos.
         </p>
@@ -532,31 +535,32 @@
         <p>
           We evaluate demo-conditioned policies on real-world tabletop manipulation with a Franka
           Panda arm, conditioning each policy on a one-shot human demonstration video. Policies are
-          trained on four seen tasks and evaluated on four unseen tasks designed by recombining
-          seen skills and objects, introducing a new contact interaction, and swapping the source
-          and target objects.
+          trained on 150 robot–human episode pairs for each of four seen tasks and evaluated on
+          six unseen tasks designed by recombining seen skills and objects, transferring seen
+          skills to novel objects, and introducing a new contact interaction.
         </p>
 
         <img
           src="./assets/real_tasks.png"
-          alt="Real-world benchmark tasks: four seen tasks (Pick Coke, Stack Blocks, Stack Cups, Close Laptop) and four unseen tasks (Pick Block, Pick Cup, Press Button, Stack Blocks in Swapped Order), each with a yellow arrow indicating the desired end-effector path."
+          alt="Real-world benchmark tasks: four seen tasks (Pick Coke, Stack Blocks, Stack Cups, Close Laptop) and six unseen tasks (Pick Block, Pick Cup, Press Button, Stack Blocks in Swapped Order, Place Block in Bin, Close Kettle Lid), each with a yellow arrow indicating the desired end-effector path."
         >
 
         <p class="caption">
-          Four seen tasks (top) and four unseen tasks (bottom) in the real-world benchmark. The
+          Four seen tasks (top row) and six unseen tasks (bottom two rows) in the real-world benchmark. The
           yellow arrow indicates the desired path of the end effector.
         </p>
 
         <img
           src="./assets/real_results.png"
-          alt="Bar chart of real-world success rates: SeeTraceAct achieves the best success rate on all four unseen tasks and improves the average from 37.5% to 50.0% over the strongest baseline."
+          alt="Bar chart of real-world success rates averaged over three independent runs: SeeTraceAct matches or outperforms every baseline on all six unseen tasks and improves average success from 33.3% to 42.8% over the strongest baseline."
           style="margin-top: 24px;"
         >
 
         <p class="caption">
-          Success rates over 10 trials for each of the four unseen tasks, along with their
-          average. SeeTraceAct achieves the strongest performance across all four unseen tasks,
-          improving average success from 37.5% to 50.0% over the strongest baseline.
+          Success rates over 10 trials for each of the six unseen tasks, averaged over three
+          independent runs, along with the average across tasks. SeeTraceAct matches or
+          outperforms every baseline on all six unseen tasks, improving average success from
+          33.3% to 42.8% over the strongest baseline (+9.5 percentage points).
         </p>
       </div>
 
@@ -573,20 +577,21 @@
         </article>
 
         <article class="result-card">
-          <h3>Trace supervision is the key ingredient</h3>
+          <h3>Demonstrations and traces work together</h3>
           <p>
-            In the cross-embodiment setting, removing trace supervision drops success from 12.2%
-            to 9.4% — close to the 9.0% of the GR00T N1.5 backbone without demonstrations —
-            showing that simply adding demonstration inputs is not sufficient.
+            In the cross-embodiment setting, removing trace supervision drops success from 11.2%
+            to 9.3%. The GR00T N1.5 backbone without demonstrations achieves 8.5%, or 9.0% with
+            trace supervision, showing that neither demonstration inputs nor trace supervision
+            is sufficient on its own.
           </p>
         </article>
 
         <article class="result-card">
           <h3>Visibility awareness matters</h3>
           <p>
-            Removing the validity head causes the largest degradation among ablations (12.2% →
-            8.2%): forcing the model to regress ill-defined off-screen coordinates hurts
-            representation learning.
+            Removing the validity head lowers success from 11.2% to 8.6%, below the 9.3%
+            achieved without any trace supervision. Forcing the model to regress ill-defined
+            off-screen coordinates can hurt representation learning.
           </p>
         </article>
 
@@ -594,11 +599,16 @@
           <h3>Design choices for encoding and traces</h3>
           <p>
             Replacing the action-aware V-JEPA 2 video encoder with the backbone's SigLIP encoder
-            lowers success to 9.2%, and 3D trace supervision (10.4%) lags behind 2D image-space
-            traces, which better match the model's visual inputs.
+            lowers success to 8.1%. Adding metric depth to the 2D trace targets yields 9.7%,
+            while supervising the demonstrator's traces instead of the robot's yields 8.7%;
+            both lag behind visibility-aware 2D image-space supervision (11.2%).
           </p>
         </article>
       </div>
+      <p class="caption">
+        Ablation success rates are averaged over the category-balanced and precision-sensitive
+        cross-embodiment splits, and further averaged over three independent runs.
+      </p>
     </section>
 
     <!-- <section aria-labelledby="video-heading">
@@ -626,11 +636,11 @@
       <h2 id="citation-heading">Citation</h2>
 
       <div class="card">
-      <pre><code>@article{son2026seetraceact,
-  title   = {SeeTraceAct: Visibility-Aware Latent Planning from Cross-Embodiment Demonstration Videos},
-  author  = {Son, Jaehyeon and Kim, Junhyun and Kam, Kyle and Coholich, Jeremiah and Kim, Seok Joon and Kim, Jinhoo and Kim, Chris Dongjoo and Cho, Jaemin and Fox, Dieter and Kira, Zsolt},
-  journal = {arXiv preprint},
-  year    = {2026}
+      <pre><code>@inproceedings{son2026seetraceact,
+  title     = {SeeTraceAct: Visibility-Aware Latent Planning from Cross-Embodiment Demonstration Videos},
+  author    = {Son, Jaehyeon and Kim, Junhyun and Kam, Kyle and Coholich, Jeremiah and Kim, Seok Joon and Kim, Jinhoo and Kim, Chris Dongjoo and Cho, Jaemin and Fox, Dieter and Kira, Zsolt},
+  booktitle = {Conference on Robot Learning (CoRL)},
+  year      = {2026}
 }</code></pre>
       </div>
     </section>
