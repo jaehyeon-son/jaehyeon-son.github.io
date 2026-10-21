@@ -35,6 +35,7 @@ I’m particularly interested in:
     <a href="https://junseokim0103.github.io/Lies-We-Can-See/" style="color: #7289da; text-decoration: none;">[project]</a>
     <a href="https://arxiv.org/abs/2608.30428" style="color: #7289da; text-decoration: none;">[paper]</a>
     <a href="https://github.com/JunseoKim0103/Lies-We-Can-See" style="color: #7289da; text-decoration: none;">[code]</a>
+    <a href="https://huggingface.co/datasets/JasonKim00/lies-we-can-see" style="color: #7289da; text-decoration: none;">[dataset]</a>
 
 
 -   FlashAdventure: A Benchmark for GUI Agents Solving Full Story Arcs in Diverse Adventure Games \\
