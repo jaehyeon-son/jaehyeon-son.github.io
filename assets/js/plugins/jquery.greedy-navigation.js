@@ -14,6 +14,12 @@ var breaks = [];
 
 function updateNav() {
 
+  // Pages without a masthead have no #site-nav; jQuery's .width() returns
+  // null for an empty set, which would make the recursion below never end.
+  if (!$nav.length) {
+    return;
+  }
+
   var availableSpace = $btn.hasClass('hidden') ? $nav.width() : $nav.width() - $btn.width() - 30;
 
   // The visible list is overflowing the nav
