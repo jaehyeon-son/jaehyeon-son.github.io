@@ -33,7 +33,7 @@ In particular, I ask what spatial understanding a robot policy needs, and how th
   </div>
   <div class="pub">
     <div class="pub__title">Lies We Can See: Joint Verbal and Non-Verbal Deception by VLM Agents in Embodied Social Interactions</div>
-    <div class="pub__authors">Jaewoo Ahn, Junseo Kim, Hyunseo Kim, Heeseung Yun, <strong>Jaehyeon Son</strong>, Zsolt Kira, Gunhee Kim</div>
+    <div class="pub__authors">Jaewoo Ahn*, Junseo Kim*, Hyunseo Kim, Heeseung Yun, <strong>Jaehyeon Son</strong>, Zsolt Kira, Gunhee Kim</div>
     <div class="pub__venue">Preprint</div>
     <div class="pub__links">
       <a class="pub-btn" href="https://junseokim0103.github.io/Lies-We-Can-See/">Project</a>
