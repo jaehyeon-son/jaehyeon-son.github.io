@@ -2,6 +2,11 @@
    PUBLICATIONS
    ========================================================================== */
 
+/* first section heading sits flush with the top of the page */
+.page__content > h2:first-child {
+  margin-top: 0;
+}
+
 .page__content .pub-note {
   margin: -0.5em 0 1.5em;
   color: $gray;
