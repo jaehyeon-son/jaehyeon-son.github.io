@@ -1,8 +1,8 @@
 ---
 permalink: /
-title: "About me"
 excerpt: "About me"
 author_profile: true
+hide_masthead: true
 redirect_from:
     - /about/
     - /about.html
@@ -20,84 +20,120 @@ I’m particularly interested in:
 
 ## Publications
 
--   SeeTraceAct: Visibility-Aware Latent Planning from Cross-Embodiment Demonstration Videos \\
-    <u>Jaehyeon Son</u>, Junhyun Kim, Kyle Kam, Jeremiah Coholich, Seok Joon Kim, Jinhoo Kim, Chris Dongjoo Kim, Jaemin Cho, Dieter Fox, Zsolt Kira \\
-    <span style="color:darkred">CoRL 2026</span> \\
-    <a href="https://jaehyeon-son.github.io/seetraceact/" style="color: #7289da; text-decoration: none;">[project]</a>
-    <a href="https://arxiv.org/abs/2606.02745" style="color: #7289da; text-decoration: none;">[paper]</a>
-    <a href="https://github.com/jaehyeon-son/SeeTraceAct" style="color: #7289da; text-decoration: none;">[code]</a>
-    <a href="https://huggingface.co/datasets/Sondroid/RoboCasa-DC" style="color: #7289da; text-decoration: none;">[dataset]</a>
+<div class="pub-list">
+  <div class="pub">
+    <div class="pub__title">SeeTraceAct: Visibility-Aware Latent Planning from Cross-Embodiment Demonstration Videos</div>
+    <div class="pub__authors"><strong>Jaehyeon Son</strong>, Junhyun Kim, Kyle Kam, Jeremiah Coholich, Seok Joon Kim, Jinhoo Kim, Chris Dongjoo Kim, Jaemin Cho, Dieter Fox, Zsolt Kira</div>
+    <div class="pub__venue">CoRL 2026</div>
+    <div class="pub__links">
+      <a class="pub-btn" href="https://jaehyeon-son.github.io/seetraceact/">Project</a>
+      <a class="pub-btn" href="https://arxiv.org/abs/2606.02745">Paper</a>
+      <a class="pub-btn" href="https://github.com/jaehyeon-son/SeeTraceAct">Code</a>
+      <a class="pub-btn" href="https://huggingface.co/datasets/Sondroid/RoboCasa-DC">Dataset</a>
+    </div>
+  </div>
+  <div class="pub">
+    <div class="pub__title">Lies We Can See: Joint Verbal and Non-Verbal Deception by VLM Agents in Embodied Social Interactions</div>
+    <div class="pub__authors">Jaewoo Ahn, Junseo Kim, Hyunseo Kim, Heeseung Yun, <strong>Jaehyeon Son</strong>, Zsolt Kira, Gunhee Kim</div>
+    <div class="pub__venue">Preprint</div>
+    <div class="pub__links">
+      <a class="pub-btn" href="https://junseokim0103.github.io/Lies-We-Can-See/">Project</a>
+      <a class="pub-btn" href="https://arxiv.org/abs/2608.30428">Paper</a>
+      <a class="pub-btn" href="https://github.com/JunseoKim0103/Lies-We-Can-See">Code</a>
+      <a class="pub-btn" href="https://huggingface.co/datasets/JasonKim00/lies-we-can-see">Dataset</a>
+    </div>
+  </div>
+  <div class="pub">
+    <div class="pub__title">FlashAdventure: A Benchmark for GUI Agents Solving Full Story Arcs in Diverse Adventure Games</div>
+    <div class="pub__authors">Jaewoo Ahn*, Junseo Kim*, Heeseung Yun, <strong>Jaehyeon Son</strong>, Dongmin Park, Jaewoong Cho, Gunhee Kim</div>
+    <div class="pub__venue">EMNLP 2025</div>
+    <div class="pub__links">
+      <a class="pub-btn" href="https://ahnjaewoo.github.io/flashadventure/">Project</a>
+      <a class="pub-btn" href="https://arxiv.org/abs/2509.01052">Paper</a>
+      <a class="pub-btn" href="https://github.com/ahnjaewoo/FlashAdventure">Code</a>
+    </div>
+  </div>
+  <div class="pub">
+    <div class="pub__title">Distilling Reinforcement Learning Algorithms for In-Context Model-Based Planning</div>
+    <div class="pub__authors"><strong>Jaehyeon Son</strong>, Soochan Lee, Gunhee Kim</div>
+    <div class="pub__venue">ICLR 2025</div>
+    <div class="pub__links">
+      <a class="pub-btn" href="https://arxiv.org/abs/2502.19009">Paper</a>
+      <a class="pub-btn" href="https://github.com/jaehyeon-son/dicp">Code</a>
+    </div>
+  </div>
+  <div class="pub">
+    <div class="pub__title">When Meta-Learning Meets Online and Continual Learning: A Survey</div>
+    <div class="pub__authors"><strong>Jaehyeon Son</strong>*, Soochan Lee*, Gunhee Kim</div>
+    <div class="pub__venue">IEEE TPAMI 2024</div>
+    <div class="pub__links">
+      <a class="pub-btn" href="https://arxiv.org/abs/2311.05241">Paper</a>
+    </div>
+  </div>
+  <div class="pub">
+    <div class="pub__title">Learning to Continually Learn with the Bayesian Principle</div>
+    <div class="pub__authors">Soochan Lee, Hyeonseong Jeon, <strong>Jaehyeon Son</strong>, Gunhee Kim</div>
+    <div class="pub__venue">ICML 2024</div>
+    <div class="pub__links">
+      <a class="pub-btn" href="https://arxiv.org/abs/2405.18758">Paper</a>
+      <a class="pub-btn" href="https://github.com/soochan-lee/SB-MCL">Code</a>
+    </div>
+  </div>
+  <div class="pub">
+    <div class="pub__title">Recasting Continual Learning as Sequence Modeling</div>
+    <div class="pub__authors">Soochan Lee, <strong>Jaehyeon Son</strong>, Gunhee Kim</div>
+    <div class="pub__venue">NeurIPS 2023</div>
+    <div class="pub__links">
+      <a class="pub-btn" href="https://arxiv.org/abs/2310.11952">Paper</a>
+      <a class="pub-btn" href="https://github.com/soochan-lee/cl-as-seq">Code</a>
+    </div>
+  </div>
+</div>
 
-
--   Lies We Can See: Joint Verbal and Non-Verbal Deception by VLM Agents in Embodied Social Interactions \\
-    Jaewoo Ahn, Junseo Kim, Hyunseo Kim, Heeseung Yun, <u>Jaehyeon Son</u>, Zsolt Kira, Gunhee Kim \\
-    <span style="color:darkred">Preprint</span> \\
-    <a href="https://junseokim0103.github.io/Lies-We-Can-See/" style="color: #7289da; text-decoration: none;">[project]</a>
-    <a href="https://arxiv.org/abs/2608.30428" style="color: #7289da; text-decoration: none;">[paper]</a>
-    <a href="https://github.com/JunseoKim0103/Lies-We-Can-See" style="color: #7289da; text-decoration: none;">[code]</a>
-    <a href="https://huggingface.co/datasets/JasonKim00/lies-we-can-see" style="color: #7289da; text-decoration: none;">[dataset]</a>
-
-
--   FlashAdventure: A Benchmark for GUI Agents Solving Full Story Arcs in Diverse Adventure Games \\
-    Jaewoo Ahn\*, Junseo Kim\*, Heeseung Yun, <u>Jaehyeon Son</u>, Dongmin Park, Jaewoong Cho, Gunhee Kim \\
-    <span style="color:darkred">EMNLP 2025</span> \\
-    <a href="https://ahnjaewoo.github.io/flashadventure/" style="color: #7289da; text-decoration: none;">[project]</a>
-    <a href="https://arxiv.org/abs/2509.01052" style="color: #7289da; text-decoration: none;">[paper]</a>
-    <a href="https://github.com/ahnjaewoo/FlashAdventure" style="color: #7289da; text-decoration: none;">[code]</a>
-
--   Distilling Reinforcement Learning Algorithms for In-Context Model-Based Planning \\
-    <u>Jaehyeon Son</u>, Soochan Lee, Gunhee Kim\\
-    <span style="color:darkred">ICLR 2025</span> \\
-    <a href="https://arxiv.org/abs/2502.19009" style="color: #7289da; text-decoration: none;">[paper]</a>
-    <a href="https://github.com/jaehyeon-son/dicp" style="color: #7289da; text-decoration: none;">[code]</a>
-
--   When Meta-Learning Meets Online and Continual Learning: A Survey \\
-    <u>Jaehyeon Son</u>\*, Soochan Lee\*, Gunhee Kim\\
-    <span style="color:darkred">IEEE TPAMI 2024</span> \\
-    <a href="https://arxiv.org/abs/2311.05241" style="color: #7289da; text-decoration: none;">[paper]</a>
-
--   Learning to Continually Learn with the Bayesian Principle \\
-    Soochan Lee, Hyeonseong Jeon, <u>Jaehyeon Son</u>, Gunhee Kim \\
-    <span style="color:darkred">ICML 2024</span> \\
-    <a href="https://arxiv.org/abs/2405.18758" style="color: #7289da; text-decoration: none;">[paper]</a>
-    <a href="https://github.com/soochan-lee/SB-MCL" style="color: #7289da; text-decoration: none;">[code]</a>
-
--   Recasting Continual Learning as Sequence Modeling \\
-    Soochan Lee, <u>Jaehyeon Son</u>, Gunhee Kim \\
-    <span style="color:darkred">NeurIPS 2023</span> \\
-    <a href="https://arxiv.org/abs/2310.11952" style="color: #7289da; text-decoration: none;">[paper]</a>
-    <a href="https://github.com/soochan-lee/cl-as-seq" style="color: #7289da; text-decoration: none;">[code]</a>
+<p class="pub-note">* denotes equal contribution.</p>
 
 ## Education
 
--   Ph.D. in Machine Learning, Georgia Institute of Technology \\
-    Aug. 2025 - Present
-
--   B.S. in Statistics and Artificial Intelligence, Seoul National University \\
-    <span style="color:darkred">Summa Cum Laude</span> \\
-    Mar. 2017 - Aug. 2023
+<div class="cv-list">
+  <div class="cv">
+    <div class="cv__main">
+      <div class="cv__title">Georgia Institute of Technology</div>
+      <div class="cv__sub">Ph.D. in Machine Learning</div>
+    </div>
+    <div class="cv__meta">Aug. 2025 &ndash; Present</div>
+  </div>
+  <div class="cv">
+    <div class="cv__main">
+      <div class="cv__title">Seoul National University</div>
+      <div class="cv__sub">B.S. in Statistics and Artificial Intelligence</div>
+      <div class="cv__note">Summa Cum Laude</div>
+    </div>
+    <div class="cv__meta">Mar. 2017 &ndash; Aug. 2023</div>
+  </div>
+</div>
 
 ## Experience
 
--   <a href="https://allenai.org/" style="color: #7289da; text-decoration: none;">Allen Institute for AI</a> \\
-    Jul. 2026 - Present\\
-    Student Researcher
-
--   <a href="https://www.krafton.ai/en/" style="color: #7289da; text-decoration: none;">Krafton</a> \\
-    Mar. 2025 - Aug. 2025\\
-    AI Fellowship Intern
-
--   <a href="https://kr.ncsoft.com/en/" style="color: #7289da; text-decoration: none;">NCSOFT</a> \\
-    Jul. 2021 - Aug. 2021 \\
-    Research Intern
-
-## Honors & Awards
-
-<!-- -   Korean Government Scholarship for Study Overseas \\
-    Aug. 2025 - Present -->
-
--   Krafton AI Fellowship \\
-    Feb. 2025
-
--   Songam Scholarship \\
-    Mar. 2017 - Feb. 2023
+<div class="cv-list">
+  <div class="cv">
+    <div class="cv__main">
+      <div class="cv__title">Allen Institute for AI</div>
+      <div class="cv__sub">Student Researcher</div>
+    </div>
+    <div class="cv__meta">Jul. 2026 &ndash; Present</div>
+  </div>
+  <div class="cv">
+    <div class="cv__main">
+      <div class="cv__title">Krafton</div>
+      <div class="cv__sub">AI Fellowship Intern</div>
+    </div>
+    <div class="cv__meta">Mar. 2025 &ndash; Aug. 2025</div>
+  </div>
+  <div class="cv">
+    <div class="cv__main">
+      <div class="cv__title">NCSOFT</div>
+      <div class="cv__sub">Research Intern</div>
+    </div>
+    <div class="cv__meta">Jul. 2021 &ndash; Aug. 2021</div>
+  </div>
+</div>
