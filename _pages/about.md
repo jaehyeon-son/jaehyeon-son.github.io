@@ -15,7 +15,7 @@ I am also currently a Student Researcher at Allen Institute for AI.
 Previously, I worked closely with <a href="https://vision.snu.ac.kr/gunhee/" style="color: #7289da; text-decoration:none">Prof. Gunhee Kim</a> at Seoul National University.
 
 My research aims to build generalist robot policies that reason about the world and turn that reasoning into reliable action.
-In particular, I ask what spatial understanding a robot policy needs, and how that understanding should reach its actions.
+In particular, I ask what spatial understanding a robot policy needs, and how that understanding should guide control.
 
 ## Publications
 
