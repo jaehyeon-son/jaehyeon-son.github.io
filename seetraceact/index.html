@@ -45,14 +45,14 @@
     }
 
     .authors a {
-      color: inherit;
+      color: var(--accent);
       text-decoration: none;
       border-bottom: 1px solid transparent;
       transition: border-color 0.15s ease, color 0.15s ease;
     }
 
     .authors a:hover {
-      color: var(--accent);
+      color: var(--accent-hover);
       border-bottom-color: currentColor;
     }
 
@@ -78,14 +78,6 @@
       border-bottom: 1px solid var(--border);
     }
 
-    .eyebrow {
-      margin: 0 0 12px;
-      color: var(--accent);
-      font-size: 1.3rem;
-      font-weight: 700;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-    }
 
     h1 {
       margin: 0;
@@ -120,36 +112,74 @@
       font-size: 0.95rem;
     }
 
+    .authors sup,
+    .affiliations sup {
+      font-size: 0.6em;
+      line-height: 0;
+      margin-left: 1px;
+      color: var(--muted);
+      font-weight: 500;
+    }
+
+    .venue {
+      margin: 18px 0 0;
+      color: var(--text);
+      font-size: 1.15rem;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+    }
+
     .links {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 12px;
-      margin-top: 30px;
+      gap: 10px;
+      margin-top: 26px;
     }
 
     .button {
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      min-width: 120px;
-      padding: 11px 18px;
+      gap: 9px;
+      padding: 10px 22px;
       color: #ffffff;
-      background: var(--accent);
-      border: 1px solid var(--accent);
+      background: #363636;
+      border: 1px solid #363636;
       border-radius: 999px;
-      font-weight: 700;
+      font-size: 0.98rem;
+      font-weight: 600;
       text-decoration: none;
+      box-shadow: 0 1px 2px rgba(15, 23, 42, 0.12);
       transition:
         background 0.2s ease,
         border-color 0.2s ease,
-        transform 0.2s ease;
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+    }
+
+    .button svg {
+      width: 1.05em;
+      height: 1.05em;
+      flex: none;
+      fill: currentColor;
     }
 
     .button:hover {
-      background: var(--accent-hover);
-      border-color: var(--accent-hover);
-      transform: translateY(-1px);
+      background: #1f1f1f;
+      border-color: #1f1f1f;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 18px rgba(15, 23, 42, 0.18);
+    }
+
+    .button:active {
+      transform: translateY(0);
+      box-shadow: 0 1px 2px rgba(15, 23, 42, 0.12);
+    }
+
+    .button:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 3px;
     }
 
     .button.secondary {
@@ -186,6 +216,11 @@
       border: 1px solid var(--border);
       border-radius: 18px;
       box-shadow: 0 12px 36px rgba(15, 23, 42, 0.05);
+      transition: box-shadow 0.3s ease, transform 0.3s ease;
+    }
+
+    .card:hover {
+      box-shadow: 0 18px 44px rgba(15, 23, 42, 0.09);
     }
 
     .media-placeholder {
@@ -208,6 +243,165 @@
       font-size: 0.92rem;
     }
 
+    .caption.steps {
+      list-style: none;
+      counter-reset: step;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 10px 0;
+      margin-top: 22px;
+      padding: 0;
+      text-align: center;
+    }
+
+    .caption.steps li {
+      position: relative;
+      flex: 0 1 300px;
+      padding: 0 24px;
+    }
+
+    .caption.steps li + li::before {
+      content: "\2192";
+      position: absolute;
+      left: -8px;
+      top: 1px;
+      color: #cbd5e1;
+      font-size: 1.05rem;
+    }
+
+    .caption.steps strong {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 7px;
+      margin-bottom: 3px;
+      color: var(--text);
+      font-size: 1rem;
+    }
+
+    .caption.steps strong::before {
+      content: counter(step);
+      counter-increment: step;
+      display: inline-grid;
+      place-items: center;
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background: var(--text);
+      color: #ffffff;
+      font-size: 0.68rem;
+      font-weight: 700;
+      line-height: 1;
+    }
+
+    /* ---------- Stats & benchmark ---------- */
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .stat {
+      padding: 20px 22px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+    }
+
+    .stat .value {
+      display: block;
+      font-size: 2rem;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      line-height: 1.1;
+    }
+
+    .stat .label {
+      display: block;
+      margin-top: 4px;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    .callout a {
+      font-weight: 600;
+    }
+
+    .result-card .kv {
+      list-style: none;
+      display: grid;
+      gap: 8px;
+      margin: 0;
+      padding: 0;
+      color: var(--muted);
+    }
+
+    .result-card .kv strong {
+      display: inline-block;
+      min-width: 9.5em;
+      color: var(--text);
+    }
+
+    .result-card .note {
+      margin-top: 12px;
+      padding-top: 10px;
+      border-top: 1px solid var(--border);
+      font-size: 0.9rem;
+    }
+
+    /* ---------- Real-world section ---------- */
+    .chart {
+      margin: 0;
+    }
+
+    .chart-legend {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 6px 20px;
+      margin: 0 0 12px;
+      color: var(--muted);
+      font-size: 0.88rem;
+    }
+
+    .chart-legend span::before {
+      content: "";
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      margin-right: 7px;
+      border-radius: 3px;
+      background: var(--c);
+      vertical-align: -1px;
+    }
+
+    .chart-legend .ours {
+      color: var(--text);
+      font-weight: 600;
+    }
+
+    .chart svg {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 0;
+      font-family: inherit;
+    }
+
+    .chart .bar {
+      transition: opacity 0.15s ease;
+    }
+
+    .chart .group:hover .bar {
+      opacity: 0.55;
+    }
+
+    .chart .group .bar:hover {
+      opacity: 1;
+    }
+
     .grid {
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -219,11 +413,47 @@
       background: var(--surface);
       border: 1px solid var(--border);
       border-radius: 16px;
+      transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+    }
+
+    .result-card:hover {
+      transform: translateY(-3px);
+      border-color: #cfd8e3;
+      box-shadow: 0 14px 32px rgba(15, 23, 42, 0.08);
     }
 
     .result-card h3 {
       margin: 0 0 8px;
       font-size: 1.1rem;
+    }
+
+    .grid.cols-3 {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .result-card .num {
+      display: inline-grid;
+      place-items: center;
+      width: 22px;
+      height: 22px;
+      margin-right: 9px;
+      border-radius: 50%;
+      background: var(--text);
+      color: #ffffff;
+      font-size: 0.78rem;
+      font-weight: 700;
+      line-height: 1;
+      vertical-align: 2px;
+    }
+
+    .callout {
+      margin: 18px 0 0;
+      padding: 14px 18px;
+      color: var(--text);
+      background: rgba(37, 99, 235, 0.06);
+      border-left: 3px solid var(--accent);
+      border-radius: 10px;
+      font-size: 0.95rem;
     }
 
     .result-card p {
@@ -288,6 +518,133 @@
       border-top: 1px solid var(--border);
     }
 
+    .hbars {
+      display: grid;
+      gap: 8px;
+      margin-top: 22px;
+    }
+
+    .hbar-group {
+      margin-top: 10px;
+      color: var(--muted);
+      font-size: 0.76rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    .hbar {
+      display: grid;
+      grid-template-columns: minmax(0, 330px) 1fr 54px;
+      align-items: center;
+      gap: 14px;
+      font-size: 0.93rem;
+    }
+
+    .hbar-track {
+      display: block;
+      height: 12px;
+      background: #f1f5f9;
+      border-radius: 999px;
+      overflow: hidden;
+    }
+
+    .hbar-fill {
+      display: block;
+      width: 0;
+      height: 100%;
+      background: #94a3b8;
+      border-radius: 999px;
+      transition: width 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    .reveal.is-visible .hbar-fill {
+      width: calc(var(--v) / 12 * 100%);
+    }
+
+    .hbar.ours {
+      font-weight: 700;
+    }
+
+    .hbar.ours .hbar-fill {
+      background: var(--accent);
+    }
+
+    .hbar-value {
+      color: var(--muted);
+      text-align: right;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .hbar.ours .hbar-value {
+      color: var(--accent);
+    }
+
+    /* ---------- Animations ---------- */
+    @keyframes fade-up {
+      from {
+        opacity: 0;
+        transform: translateY(18px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    header .hero-item {
+      opacity: 0;
+      animation: fade-up 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+    }
+
+    header .hero-item:nth-child(1) { animation-delay: 0.05s; }
+    header .hero-item:nth-child(2) { animation-delay: 0.2s; }
+    header .hero-item:nth-child(3) { animation-delay: 0.32s; }
+    header .hero-item:nth-child(4) { animation-delay: 0.42s; }
+    header .hero-item:nth-child(5) { animation-delay: 0.55s; }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1), transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    .reveal.is-visible {
+      opacity: 1;
+      transform: none;
+    }
+
+    .grid .reveal:nth-child(2) { transition-delay: 0.1s; }
+    .grid .reveal:nth-child(3) { transition-delay: 0.2s; }
+    .grid .reveal:nth-child(4) { transition-delay: 0.3s; }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      header .hero-item {
+        opacity: 1;
+        animation: none;
+      }
+
+      .reveal {
+        opacity: 1;
+        transform: none;
+        transition: none;
+      }
+
+      .hbar-fill {
+        transition: none;
+      }
+
+      .button,
+      .card,
+      .result-card {
+        transition: none;
+      }
+    }
+
     @media (max-width: 720px) {
       header {
         padding: 72px 0 48px;
@@ -298,13 +655,38 @@
         gap: 4px 14px;
       }
 
-      .grid {
+      .grid,
+      .grid.cols-3 {
         grid-template-columns: 1fr;
+      }
+
+      .stats {
+        grid-template-columns: 1fr;
+      }
+
+      .caption.steps li {
+        flex-basis: 100%;
+      }
+
+      .caption.steps li + li::before {
+        content: none;
       }
 
       .media-placeholder {
         min-height: 280px;
       }
+
+
+      .hbar {
+        grid-template-columns: 1fr 48px;
+        gap: 4px 10px;
+      }
+
+      .hbar-label {
+        grid-column: 1 / -1;
+      }
+
+
     }
   </style>
 </head>
@@ -313,13 +695,11 @@
   <header>
     <div class="container">
 
-      <p class="eyebrow">CoRL 2026</p>
+      <h1 class="hero-item">SeeTraceAct: Visibility-Aware Latent Planning from Cross-Embodiment Demonstration Videos</h1>
 
-      <h1>SeeTraceAct: Visibility-Aware Latent Planning from Cross-Embodiment Demonstration Videos</h1>
-
-      <p class="authors">
+      <p class="authors hero-item">
         <span><a href="https://jaehyeon-son.github.io/">Jaehyeon Son</a><sup>1,2</sup></span>
-        <span>Junhyun Kim<sup>1</sup></span>
+        <span><a href="https://junhyun.me/">Junhyun Kim</a><sup>1</sup></span>
         <span>Kyle Kam<sup>1</sup></span>
         <span><a href="https://www.jeremiahcoholich.com/">Jeremiah Coholich</a><sup>1</sup></span>
         <span>Seok Joon Kim<sup>1</sup></span>
@@ -330,24 +710,35 @@
         <span><a href="https://faculty.cc.gatech.edu/~zk15/">Zsolt Kira</a><sup>1</sup></span>
       </p>
 
-      <p class="affiliations">
+      <p class="affiliations hero-item">
         <span><sup>1</sup>Georgia Institute of Technology</span>
         <span><sup>2</sup>Allen Institute for AI</span>
         <span><sup>3</sup>Johns Hopkins University</span>
         <span><sup>4</sup>University of Washington</span>
       </p>
 
-      <nav class="links" aria-label="Project resources">
-        <a class="button" href="https://arxiv.org/abs/2606.02745" aria-label="Paper link">Paper</a>
-        <a class="button" href="https://github.com/jaehyeon-son/SeeTraceAct" aria-label="Code repository link">Code</a>
-        <a class="button" href="https://huggingface.co/datasets/Sondroid/RoboCasa-DC" aria-label="Dataset link">Dataset</a>
+      <p class="venue hero-item">Conference on Robot Learning (CoRL) 2026</p>
+
+      <nav class="links hero-item" aria-label="Project resources">
+        <a class="button" href="https://arxiv.org/abs/2606.02745" aria-label="Paper link">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2h8l6 6v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2zm7 1.5V9h5.5L13 3.5zM8 12v1.5h8V12H8zm0 3.5V17h8v-1.5H8z"/></svg>
+          <span>Paper</span>
+        </a>
+        <a class="button" href="https://github.com/jaehyeon-son/SeeTraceAct" aria-label="Code repository link">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.76 2.69 1.25 3.35.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.18-3.09-.12-.29-.51-1.46.11-3.04 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.16-1.18 3.16-1.18.63 1.58.24 2.75.12 3.04.74.81 1.18 1.83 1.18 3.09 0 4.41-2.69 5.38-5.26 5.67.41.35.78 1.05.78 2.12 0 1.53-.01 2.77-.01 3.14 0 .31.2.67.8.56A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+          <span>Code</span>
+        </a>
+        <a class="button" href="https://huggingface.co/datasets/Sondroid/RoboCasa-DC" aria-label="Dataset link">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C7.03 2 3 3.79 3 6s4.03 4 9 4 9-1.79 9-4-4.03-4-9-4zm-9 6.5V12c0 2.21 4.03 4 9 4s9-1.79 9-4V8.5c-1.9 1.52-5.3 2.5-9 2.5s-7.1-.98-9-2.5zm0 5.5V18c0 2.21 4.03 4 9 4s9-1.79 9-4v-4c-1.9 1.52-5.3 2.5-9 2.5S4.9 15.52 3 14z"/></svg>
+          <span>Dataset</span>
+        </a>
         <!-- <a class="button secondary" href="#" aria-label="Video link">Video</a> -->
       </nav>
     </div>
   </header>
 
   <main class="container">
-    <section aria-labelledby="teaser-heading">
+    <section class="reveal" aria-labelledby="teaser-heading">
       <h2 id="teaser-heading">Overview</h2>
 
       <div class="card">
@@ -356,19 +747,15 @@
           alt="Overview of SeeTraceAct: the policy observes a one-shot demonstration video, camera views, and a language instruction (See), predicts future end-effector traces and their visibility during training (Trace), and generates actions from the visual latent plan (Act)."
         >
 
-        <p class="caption">
-          <strong>Overview of SeeTraceAct.</strong> Given a demonstration video, current camera
-          views, and a language instruction, the policy encodes task-relevant information into a
-          <em>visual latent plan</em> (<strong>See</strong>). During training, the policy predicts
-          future visual traces and their visibility for each camera view (<strong>Trace</strong>),
-          while also predicting actions from the latent plan (<strong>Act</strong>). At inference
-          time, the trace prediction component is discarded, and the policy generates actions from
-          the latent plan (<strong>Act</strong>).
-        </p>
+        <ul class="caption steps">
+          <li><strong>See</strong>One-shot demonstration video</li>
+          <li><strong>Trace</strong>Future gripper path and its visibility</li>
+          <li><strong>Act</strong>Generate robot actions</li>
+        </ul>
       </div>
     </section>
 
-    <section aria-labelledby="abstract-heading">
+    <section class="reveal" aria-labelledby="abstract-heading">
       <h2 id="abstract-heading">Abstract</h2>
 
       <div class="card">
@@ -378,7 +765,7 @@
       </div>
     </section>
 
-    <section aria-labelledby="method-heading">
+    <section class="reveal" aria-labelledby="method-heading">
       <h2 id="method-heading">Method</h2>
 
       <div class="card">
@@ -386,50 +773,42 @@
           src="./assets/method.png"
           alt="Architecture of SeeTraceAct: camera views, a language instruction, and a demonstration video are encoded into a vision-language model; learnable query tokens form a visual latent plan that feeds a flow-matching action expert and, during training, a visibility-aware trace decoder with regression and validity heads."
         >
-
-        <p class="caption">
-          <strong>Architecture of SeeTraceAct.</strong> The model receives camera views, a
-          language instruction, a demonstration video, and robot states, and outputs an action
-          chunk. Learnable query tokens are appended after the input tokens; their final hidden
-          states form a <em>visual latent plan</em>, which is decoded into future end-effector
-          traces during training. The trace decoder is used only during training and discarded at
-          inference time.
-        </p>
-
-        <p>
-          SeeTraceAct builds on the GR00T N1.5 architecture, which pairs a vision-language model
-          (VLM) with a flow-matching action expert, and augments it with three components:
-        </p>
-
-        <p>
-          <strong>Video tokens.</strong> The demonstration video is encoded with an action-aware
-          video encoder (V-JEPA 2) and compressed by a Perceiver Resampler into a compact set of
-          32 video tokens appended to the VLM input. Under causal attention, the video tokens
-          attend to the image and language tokens, making the demonstration representation
-          context-dependent rather than fixed across the episode.
-        </p>
-
-        <p>
-          <strong>Visual latent plan.</strong> A separate set of learnable query tokens is
-          appended after the input tokens. These query tokens attend to the image, language, and
-          video tokens, and their final hidden states constitute a latent representation trained
-          to encode future task progression, which conditions action generation.
-        </p>
-
-        <p>
-          <strong>Visibility-aware trace decoder.</strong> During training, the latent plan is
-          decoded into future end-effector traces in each static camera view. Because the end
-          effector may leave some views, making its 2D coordinates ill-posed regression targets,
-          the decoder uses two heads: a regression head that predicts normalized trace
-          coordinates and a validity head that predicts whether each trace point lies within the
-          image — so off-screen points still provide a learning signal. The policy is trained with
-          a flow-matching action prediction loss plus this auxiliary visual trace loss, and the
-          trace decoder is discarded after training.
-        </p>
       </div>
+
+      <div class="grid cols-3" style="margin-top: 18px;">
+        <article class="result-card reveal">
+          <h3><span class="num">1</span>Video tokens</h3>
+          <p>
+            V-JEPA 2 encodes the demonstration video and a Perceiver Resampler compresses it
+            into a compact set of tokens that join the VLM input.
+          </p>
+        </article>
+
+        <article class="result-card reveal">
+          <h3><span class="num">2</span>Visual latent plan</h3>
+          <p>
+            Learnable query tokens attend to the image, language, and video tokens. Their
+            hidden states condition the action expert.
+          </p>
+        </article>
+
+        <article class="result-card reveal">
+          <h3><span class="num">3</span>Visibility-aware traces</h3>
+          <p>
+            The plan is decoded into future end-effector traces in each camera view. A validity
+            head predicts whether each point is in frame, so off-screen points still carry a
+            signal.
+          </p>
+        </article>
+      </div>
+
+      <p class="callout reveal">
+        <strong>Training only.</strong> The trace decoder shapes the plan during training and is
+        discarded at inference, so the deployed policy simply sees and acts.
+      </p>
     </section>
 
-    <section aria-labelledby="benchmark-heading">
+    <section class="reveal" aria-labelledby="benchmark-heading">
       <h2 id="benchmark-heading">RoboCasa-DC Benchmark</h2>
 
       <div class="card">
@@ -439,39 +818,59 @@
         >
 
         <p class="caption">
-          <strong>Cross-embodiment benchmark dataset in RoboCasa-DC.</strong> For each of the 24
-          tasks, we pair 100 original Panda-arm trajectories with collected GR-1 humanoid
-          demonstrations for training. For evaluation, we collect humanoid demonstrations for 50
-          pre-defined seeds per task.
-        </p>
-
-        <p>
-          RoboCasa-DC extends the RoboCasa simulation environment with episode-paired
-          demonstrations for demo-conditioned policy learning. It supports both
-          <strong>same-embodiment</strong> evaluation, where videos from Panda-arm trajectories
-          serve as demonstrations, and <strong>cross-embodiment</strong> evaluation, where
-          teleoperated GR-1 humanoid videos act as a simulated proxy for real-world human
-          demonstrations. Each evaluation split partitions the 24 tasks into 19 seen training
-          tasks and five unseen evaluation tasks; at test time, each policy is conditioned on a single
-          demonstration video paired with each evaluation seed. We publicly release
-          <a href="https://huggingface.co/datasets/Sondroid/RoboCasa-DC">RoboCasa-DC</a> to
-          support reproducible evaluation and future work on demo-conditioned policies.
+          A demo-conditioned extension of RoboCasa: every Panda-arm trajectory is paired with a
+          GR-1 humanoid demonstration.
         </p>
       </div>
+
+      <div class="stats" style="margin-top: 18px;">
+        <div class="stat reveal">
+          <span class="value">24</span>
+          <span class="label">kitchen tasks</span>
+        </div>
+        <div class="stat reveal">
+          <span class="value">100</span>
+          <span class="label">Panda&ndash;humanoid demo pairs per task</span>
+        </div>
+        <div class="stat reveal">
+          <span class="value">50</span>
+          <span class="label">evaluation seeds per task, each with its own demo</span>
+        </div>
+      </div>
+
+      <div class="grid" style="margin-top: 18px;">
+        <article class="result-card reveal">
+          <h3>Two demo sources</h3>
+          <ul class="kv">
+            <li><strong>Same-embodiment</strong> Panda-arm video</li>
+            <li><strong>Cross-embodiment</strong> GR-1 humanoid video as a human proxy</li>
+          </ul>
+        </article>
+
+        <article class="result-card reveal">
+          <h3>Two evaluation splits</h3>
+          <ul class="kv">
+            <li><strong>Category-balanced</strong> every task type</li>
+            <li><strong>Precision-sensitive</strong> tasks with small target regions</li>
+          </ul>
+          <p class="note">Each split trains on 19 tasks and holds out 5 unseen ones.</p>
+        </article>
+      </div>
+
+      <p class="callout reveal">
+        <strong>Public release.</strong> RoboCasa-DC is available on
+        <a href="https://huggingface.co/datasets/Sondroid/RoboCasa-DC">Hugging Face</a>.
+      </p>
     </section>
 
-    <section aria-labelledby="results-heading">
+    <section class="reveal" aria-labelledby="results-heading">
       <h2 id="results-heading">Results</h2>
 
       <div class="card">
         <h3>RoboCasa-DC Benchmark</h3>
 
-        <p>
-          SeeTraceAct achieves the best success rate across all four evaluation settings, covering
-          both category-balanced and precision-sensitive splits under same- and cross-embodiment
-          demonstrations, with the largest margin in the precision-sensitive cross-embodiment
-          setting.
-        </p>
+        <p>Best success rate in all four settings, with the largest margin on the
+          precision-sensitive cross-embodiment split.</p>
 
         <div class="table-wrap">
           <table>
@@ -522,96 +921,296 @@
         </div>
 
         <p class="caption">
-          Success rates averaged over the five unseen tasks in each split, with 50 evaluation
-          episodes per task, further averaged over three independent runs. In <em>Same-emb demo</em>, policies are conditioned on demonstrations
-          from the same Panda-arm embodiment; in <em>Cross-emb demo</em>, policies are conditioned
-          on simulated GR-1 humanoid demonstrations as a proxy for human videos.
+          Success rate over the five unseen tasks of each split, 50 episodes per task, averaged
+          over three runs.
         </p>
       </div>
 
       <div class="card" style="margin-top: 18px;">
         <h3>Real-World Benchmark</h3>
 
-        <p>
-          We evaluate demo-conditioned policies on real-world tabletop manipulation with a Franka
-          Panda arm, conditioning each policy on a one-shot human demonstration video. Policies are
-          trained on 150 robot–human episode pairs for each of four seen tasks and evaluated on
-          six unseen tasks designed by recombining seen skills and objects, transferring seen
-          skills to novel objects, and introducing a new contact interaction.
-        </p>
+        <p>A Franka Panda arm conditioned on a single human video, trained on four tasks and
+          tested on six unseen ones.</p>
 
-        <img
-          src="./assets/real_tasks.png"
-          alt="Real-world benchmark tasks: four seen tasks (Pick Coke, Stack Blocks, Stack Cups, Close Laptop) and six unseen tasks (Pick Block, Pick Cup, Press Button, Stack Blocks in Swapped Order, Place Block in Bin, Close Kettle Lid), each with a yellow arrow indicating the desired end-effector path."
-        >
+        <figure class="chart">
+          <div class="chart-legend" aria-hidden="true">
+            <span class="" style="--c: #eb6834">Vid2Robot</span>
+            <span class="" style="--c: #6250d6">UniSkill</span>
+            <span class="" style="--c: #1baf7a">ViVLA</span>
+            <span class="ours" style="--c: #2563eb">SeeTraceAct (Ours)</span>
+          </div>
+<svg viewBox="0 0 920 330" role="img" aria-labelledby="real-chart-title" xmlns="http://www.w3.org/2000/svg">
+<title id="real-chart-title">Real-world success rate per unseen task for Vid2Robot, UniSkill, ViVLA, and SeeTraceAct</title>
+<rect x="784.3" y="12" width="123.7" height="310" rx="10" fill="#f1f5f9"/>
+<line x1="42" x2="908" y1="280.0" y2="280.0" stroke="#cbd5e1" stroke-width="1"/>
+<text x="34" y="283.5" text-anchor="end" font-size="11" fill="#667085">0</text>
+<line x1="42" x2="908" y1="214.5" y2="214.5" stroke="#e5e7eb" stroke-width="1"/>
+<text x="34" y="218.0" text-anchor="end" font-size="11" fill="#667085">20</text>
+<line x1="42" x2="908" y1="149.0" y2="149.0" stroke="#e5e7eb" stroke-width="1"/>
+<text x="34" y="152.5" text-anchor="end" font-size="11" fill="#667085">40</text>
+<line x1="42" x2="908" y1="83.5" y2="83.5" stroke="#e5e7eb" stroke-width="1"/>
+<text x="34" y="87.0" text-anchor="end" font-size="11" fill="#667085">60</text>
+<line x1="42" x2="908" y1="18.0" y2="18.0" stroke="#e5e7eb" stroke-width="1"/>
+<text x="34" y="21.5" text-anchor="end" font-size="11" fill="#667085">80</text>
+<text transform="translate(11 149) rotate(-90)" text-anchor="middle" font-size="11" fill="#667085">Success rate (%)</text>
+<g class="group">
+<path class="bar" d="M58.9,280.0 V109.4 Q58.9,105.4 62.9,105.4 H75.9 Q79.9,105.4 79.9,109.4 V280.0 Z" fill="#eb6834"><title>Vid2Robot · Pick Block: 53.3%</title></path>
+<text x="69.4" y="100.4" text-anchor="middle" font-size="10.5" fill="#667085">53.3</text>
+<path class="bar" d="M81.9,280.0 V98.3 Q81.9,94.3 85.9,94.3 H98.9 Q102.9,94.3 102.9,98.3 V280.0 Z" fill="#6250d6"><title>UniSkill · Pick Block: 56.7%</title></path>
+<text x="92.4" y="89.3" text-anchor="middle" font-size="10.5" fill="#667085">56.7</text>
+<path class="bar" d="M104.9,280.0 V76.7 Q104.9,72.7 108.9,72.7 H121.9 Q125.9,72.7 125.9,76.7 V280.0 Z" fill="#1baf7a"><title>ViVLA · Pick Block: 63.3%</title></path>
+<text x="115.4" y="67.7" text-anchor="middle" font-size="10.5" fill="#667085">63.3</text>
+<path class="bar" d="M127.9,280.0 V54.8 Q127.9,50.8 131.9,50.8 H144.9 Q148.9,50.8 148.9,54.8 V280.0 Z" fill="#2563eb"><title>SeeTraceAct (Ours) · Pick Block: 70.0%</title></path>
+<text x="138.4" y="45.8" text-anchor="middle" font-size="10.5" fill="#1f2937" font-weight="700">70</text>
+</g>
+<text x="103.9" y="298.0" text-anchor="middle" font-size="12" fill="#1f2937">
+<tspan x="103.9" dy="0">Pick Block</tspan>
+</text>
+<g class="group">
+<path class="bar" d="M182.6,280.0 V163.8 Q182.6,159.8 186.6,159.8 H199.6 Q203.6,159.8 203.6,163.8 V280.0 Z" fill="#eb6834"><title>Vid2Robot · Pick Cup: 36.7%</title></path>
+<text x="193.1" y="154.8" text-anchor="middle" font-size="10.5" fill="#667085">36.7</text>
+<path class="bar" d="M205.6,280.0 V87.5 Q205.6,83.5 209.6,83.5 H222.6 Q226.6,83.5 226.6,87.5 V280.0 Z" fill="#6250d6"><title>UniSkill · Pick Cup: 60.0%</title></path>
+<text x="216.1" y="78.5" text-anchor="middle" font-size="10.5" fill="#667085">60</text>
+<path class="bar" d="M228.6,280.0 V109.4 Q228.6,105.4 232.6,105.4 H245.6 Q249.6,105.4 249.6,109.4 V280.0 Z" fill="#1baf7a"><title>ViVLA · Pick Cup: 53.3%</title></path>
+<text x="239.1" y="100.4" text-anchor="middle" font-size="10.5" fill="#667085">53.3</text>
+<path class="bar" d="M251.6,280.0 V54.8 Q251.6,50.8 255.6,50.8 H268.6 Q272.6,50.8 272.6,54.8 V280.0 Z" fill="#2563eb"><title>SeeTraceAct (Ours) · Pick Cup: 70.0%</title></path>
+<text x="262.1" y="45.8" text-anchor="middle" font-size="10.5" fill="#1f2937" font-weight="700">70</text>
+</g>
+<text x="227.6" y="298.0" text-anchor="middle" font-size="12" fill="#1f2937">
+<tspan x="227.6" dy="0">Pick Cup</tspan>
+</text>
+<g class="group">
+<path class="bar" d="M306.3,280.0 V185.8 Q306.3,181.8 310.3,181.8 H323.3 Q327.3,181.8 327.3,185.8 V280.0 Z" fill="#eb6834"><title>Vid2Robot · Press Button: 30.0%</title></path>
+<text x="316.8" y="176.8" text-anchor="middle" font-size="10.5" fill="#667085">30</text>
+<path class="bar" d="M329.3,280.0 V196.6 Q329.3,192.6 333.3,192.6 H346.3 Q350.3,192.6 350.3,196.6 V280.0 Z" fill="#6250d6"><title>UniSkill · Press Button: 26.7%</title></path>
+<text x="339.8" y="187.6" text-anchor="middle" font-size="10.5" fill="#667085">26.7</text>
+<path class="bar" d="M352.3,280.0 V229.3 Q352.3,225.3 356.3,225.3 H369.3 Q373.3,225.3 373.3,229.3 V280.0 Z" fill="#1baf7a"><title>ViVLA · Press Button: 16.7%</title></path>
+<text x="362.8" y="220.3" text-anchor="middle" font-size="10.5" fill="#667085">16.7</text>
+<path class="bar" d="M375.3,280.0 V153.0 Q375.3,149.0 379.3,149.0 H392.3 Q396.3,149.0 396.3,153.0 V280.0 Z" fill="#2563eb"><title>SeeTraceAct (Ours) · Press Button: 40.0%</title></path>
+<text x="385.8" y="144.0" text-anchor="middle" font-size="10.5" fill="#1f2937" font-weight="700">40</text>
+</g>
+<text x="351.3" y="298.0" text-anchor="middle" font-size="12" fill="#1f2937">
+<tspan x="351.3" dy="0">Press Button</tspan>
+</text>
+<g class="group">
+<path class="bar" d="M430.0,280.0 V273.2 Q430.0,269.2 434.0,269.2 H447.0 Q451.0,269.2 451.0,273.2 V280.0 Z" fill="#eb6834"><title>Vid2Robot · Stack Blocks in Swapped Order: 3.3%</title></path>
+<text x="440.5" y="264.2" text-anchor="middle" font-size="10.5" fill="#667085">3.3</text>
+<path class="bar" d="M453.0,280.0 V262.1 Q453.0,258.1 457.0,258.1 H470.0 Q474.0,258.1 474.0,262.1 V280.0 Z" fill="#6250d6"><title>UniSkill · Stack Blocks in Swapped Order: 6.7%</title></path>
+<text x="463.5" y="253.1" text-anchor="middle" font-size="10.5" fill="#667085">6.7</text>
+<path class="bar" d="M476.0,280.0 V262.1 Q476.0,258.1 480.0,258.1 H493.0 Q497.0,258.1 497.0,262.1 V280.0 Z" fill="#1baf7a"><title>ViVLA · Stack Blocks in Swapped Order: 6.7%</title></path>
+<text x="486.5" y="253.1" text-anchor="middle" font-size="10.5" fill="#667085">6.7</text>
+<path class="bar" d="M499.0,280.0 V251.2 Q499.0,247.2 503.0,247.2 H516.0 Q520.0,247.2 520.0,251.2 V280.0 Z" fill="#2563eb"><title>SeeTraceAct (Ours) · Stack Blocks in Swapped Order: 10.0%</title></path>
+<text x="509.5" y="242.2" text-anchor="middle" font-size="10.5" fill="#1f2937" font-weight="700">10</text>
+</g>
+<text x="475.0" y="298.0" text-anchor="middle" font-size="12" fill="#1f2937">
+<tspan x="475.0" dy="0">Stack Blocks</tspan>
+<tspan x="475.0" dy="1.25em">(Swapped Order)</tspan>
+</text>
+<g class="group">
+<path class="bar" d="M553.7,280.0 V262.1 Q553.7,258.1 557.7,258.1 H570.7 Q574.7,258.1 574.7,262.1 V280.0 Z" fill="#eb6834"><title>Vid2Robot · Place Block in Bin: 6.7%</title></path>
+<text x="564.2" y="253.1" text-anchor="middle" font-size="10.5" fill="#667085">6.7</text>
+<rect class="bar" x="576.7" y="278.0" width="21" height="2" fill="#6250d6"><title>UniSkill · Place Block in Bin: 0.0%</title></rect>
+<text x="587.2" y="275.0" text-anchor="middle" font-size="10.5" fill="#667085">0</text>
+<path class="bar" d="M599.7,280.0 V240.4 Q599.7,236.4 603.7,236.4 H616.7 Q620.7,236.4 620.7,240.4 V280.0 Z" fill="#1baf7a"><title>ViVLA · Place Block in Bin: 13.3%</title></path>
+<text x="610.2" y="231.4" text-anchor="middle" font-size="10.5" fill="#667085">13.3</text>
+<path class="bar" d="M622.7,280.0 V240.4 Q622.7,236.4 626.7,236.4 H639.7 Q643.7,236.4 643.7,240.4 V280.0 Z" fill="#2563eb"><title>SeeTraceAct (Ours) · Place Block in Bin: 13.3%</title></path>
+<text x="633.2" y="231.4" text-anchor="middle" font-size="10.5" fill="#1f2937" font-weight="700">13.3</text>
+</g>
+<text x="598.7" y="298.0" text-anchor="middle" font-size="12" fill="#1f2937">
+<tspan x="598.7" dy="0">Place Block</tspan>
+<tspan x="598.7" dy="1.25em">in Bin</tspan>
+</text>
+<g class="group">
+<path class="bar" d="M677.4,280.0 V109.4 Q677.4,105.4 681.4,105.4 H694.4 Q698.4,105.4 698.4,109.4 V280.0 Z" fill="#eb6834"><title>Vid2Robot · Close Kettle Lid: 53.3%</title></path>
+<text x="687.9" y="100.4" text-anchor="middle" font-size="10.5" fill="#667085">53.3</text>
+<path class="bar" d="M700.4,280.0 V120.2 Q700.4,116.2 704.4,116.2 H717.4 Q721.4,116.2 721.4,120.2 V280.0 Z" fill="#6250d6"><title>UniSkill · Close Kettle Lid: 50.0%</title></path>
+<text x="710.9" y="111.2" text-anchor="middle" font-size="10.5" fill="#667085">50</text>
+<path class="bar" d="M723.4,280.0 V229.3 Q723.4,225.3 727.4,225.3 H740.4 Q744.4,225.3 744.4,229.3 V280.0 Z" fill="#1baf7a"><title>ViVLA · Close Kettle Lid: 16.7%</title></path>
+<text x="733.9" y="220.3" text-anchor="middle" font-size="10.5" fill="#667085">16.7</text>
+<path class="bar" d="M746.4,280.0 V109.4 Q746.4,105.4 750.4,105.4 H763.4 Q767.4,105.4 767.4,109.4 V280.0 Z" fill="#2563eb"><title>SeeTraceAct (Ours) · Close Kettle Lid: 53.3%</title></path>
+<text x="756.9" y="100.4" text-anchor="middle" font-size="10.5" fill="#1f2937" font-weight="700">53.3</text>
+</g>
+<text x="722.4" y="298.0" text-anchor="middle" font-size="12" fill="#1f2937">
+<tspan x="722.4" dy="0">Close Kettle Lid</tspan>
+</text>
+<g class="group">
+<path class="bar" d="M801.1,280.0 V183.8 Q801.1,179.8 805.1,179.8 H818.1 Q822.1,179.8 822.1,183.8 V280.0 Z" fill="#eb6834"><title>Vid2Robot · Average: 30.6%</title></path>
+<text x="811.6" y="174.8" text-anchor="middle" font-size="10.5" fill="#667085">30.6</text>
+<path class="bar" d="M824.1,280.0 V174.9 Q824.1,170.9 828.1,170.9 H841.1 Q845.1,170.9 845.1,174.9 V280.0 Z" fill="#6250d6"><title>UniSkill · Average: 33.3%</title></path>
+<text x="834.6" y="165.9" text-anchor="middle" font-size="10.5" fill="#667085">33.3</text>
+<path class="bar" d="M847.1,280.0 V191.3 Q847.1,187.3 851.1,187.3 H864.1 Q868.1,187.3 868.1,191.3 V280.0 Z" fill="#1baf7a"><title>ViVLA · Average: 28.3%</title></path>
+<text x="857.6" y="182.3" text-anchor="middle" font-size="10.5" fill="#667085">28.3</text>
+<path class="bar" d="M870.1,280.0 V143.8 Q870.1,139.8 874.1,139.8 H887.1 Q891.1,139.8 891.1,143.8 V280.0 Z" fill="#2563eb"><title>SeeTraceAct (Ours) · Average: 42.8%</title></path>
+<text x="880.6" y="134.8" text-anchor="middle" font-size="10.5" fill="#1f2937" font-weight="700">42.8</text>
+</g>
+<text x="846.1" y="298.0" text-anchor="middle" font-size="12" fill="#1f2937" font-weight="600">
+<tspan x="846.1" dy="0">Average</tspan>
+</text>
+</svg>
+        </figure>
 
         <p class="caption">
-          Four seen tasks (top row) and six unseen tasks (bottom two rows) in the real-world benchmark. The
-          yellow arrow indicates the desired path of the end effector.
-        </p>
-
-        <img
-          src="./assets/real_results.png"
-          alt="Bar chart of real-world success rates averaged over three independent runs: SeeTraceAct matches or outperforms every baseline on all six unseen tasks and improves average success from 33.3% to 42.8% over the strongest baseline."
-          style="margin-top: 24px;"
-        >
-
-        <p class="caption">
-          Success rates over 10 trials for each of the six unseen tasks, averaged over three
-          independent runs, along with the average across tasks. SeeTraceAct matches or
-          outperforms every baseline on all six unseen tasks, improving average success from
-          33.3% to 42.8% over the strongest baseline (+9.5 percentage points).
+          Success rate over 10 trials per task, averaged over three runs. SeeTraceAct matches or
+          beats every baseline on every task.
         </p>
       </div>
 
-      <div class="grid" style="margin-top: 18px;">
-        <article class="result-card">
-          <h3>Larger gains on precision-sensitive tasks</h3>
+      <div class="card" style="margin-top: 18px;">
+        <h3>What each piece contributes</h3>
+
+        <div class="hbars" aria-label="Ablation success rates">
+          <div class="hbar ours">
+            <span class="hbar-label">SeeTraceAct (Ours)</span>
+            <span class="hbar-track"><span class="hbar-fill" style="--v: 11.2;"></span></span>
+            <span class="hbar-value">11.2%</span>
+          </div>
+          <div class="hbar-group">SeeTraceAct variants</div>
+          <div class="hbar">
+            <span class="hbar-label">3D traces instead of 2D image-space traces</span>
+            <span class="hbar-track"><span class="hbar-fill" style="--v: 9.7;"></span></span>
+            <span class="hbar-value">9.7%</span>
+          </div>
+          <div class="hbar">
+            <span class="hbar-label">No trace supervision</span>
+            <span class="hbar-track"><span class="hbar-fill" style="--v: 9.3;"></span></span>
+            <span class="hbar-value">9.3%</span>
+          </div>
+          <div class="hbar">
+            <span class="hbar-label">Trace the demonstrator instead of the robot</span>
+            <span class="hbar-track"><span class="hbar-fill" style="--v: 8.7;"></span></span>
+            <span class="hbar-value">8.7%</span>
+          </div>
+          <div class="hbar">
+            <span class="hbar-label">No validity head</span>
+            <span class="hbar-track"><span class="hbar-fill" style="--v: 8.6;"></span></span>
+            <span class="hbar-value">8.6%</span>
+          </div>
+          <div class="hbar">
+            <span class="hbar-label">SigLIP instead of the V-JEPA 2 video encoder</span>
+            <span class="hbar-track"><span class="hbar-fill" style="--v: 8.1;"></span></span>
+            <span class="hbar-value">8.1%</span>
+          </div>
+          <div class="hbar-group">Without a demonstration video</div>
+          <div class="hbar">
+            <span class="hbar-label">GR00T N1.5 backbone + trace supervision</span>
+            <span class="hbar-track"><span class="hbar-fill" style="--v: 9.0;"></span></span>
+            <span class="hbar-value">9.0%</span>
+          </div>
+          <div class="hbar">
+            <span class="hbar-label">GR00T N1.5 backbone</span>
+            <span class="hbar-track"><span class="hbar-fill" style="--v: 8.5;"></span></span>
+            <span class="hbar-value">8.5%</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid cols-3" style="margin-top: 18px;">
+        <article class="result-card reveal">
+          <h3>Demos and traces work together</h3>
           <p>
-            Across all 24 RoboCasa-DC tasks, the target interaction ratio (TIR) — the fraction of
-            the image covered by the target interaction region — is negatively correlated with
-            SeeTraceAct's gain over every baseline (Spearman ρ = −0.63, p &lt; 10⁻³ vs. the
-            strongest baseline per task), showing that trace supervision helps most when success
-            depends on localizing small target regions.
+            Dropping either the demonstration video or trace supervision falls well short of
+            the full model. Neither is enough on its own.
           </p>
         </article>
 
-        <article class="result-card">
-          <h3>Demonstrations and traces work together</h3>
-          <p>
-            In the cross-embodiment setting, removing trace supervision drops success from 11.2%
-            to 9.3%. The GR00T N1.5 backbone without demonstrations achieves 8.5%, or 9.0% with
-            trace supervision, showing that neither demonstration inputs nor trace supervision
-            is sufficient on its own.
-          </p>
-        </article>
-
-        <article class="result-card">
+        <article class="result-card reveal">
           <h3>Visibility awareness matters</h3>
           <p>
-            Removing the validity head lowers success from 11.2% to 8.6%, below the 9.3%
-            achieved without any trace supervision. Forcing the model to regress ill-defined
-            off-screen coordinates can hurt representation learning.
+            Without the validity head, success drops below even having no trace supervision.
+            Regressing off-screen points hurts.
           </p>
         </article>
 
-        <article class="result-card">
-          <h3>Design choices for encoding and traces</h3>
+        <article class="result-card reveal">
+          <h3>Simple 2D traces win</h3>
           <p>
-            Replacing the action-aware V-JEPA 2 video encoder with the backbone's SigLIP encoder
-            lowers success to 8.1%. Adding metric depth to the 2D trace targets yields 9.7%,
-            while supervising the demonstrator's traces instead of the robot's yields 8.7%;
-            both lag behind visibility-aware 2D image-space supervision (11.2%).
+            Image-space traces of the robot beat 3D traces and demonstrator traces.
           </p>
         </article>
       </div>
-      <p class="caption">
-        Ablation success rates are averaged over the category-balanced and precision-sensitive
-        cross-embodiment splits, and further averaged over three independent runs.
-      </p>
+
+      <div class="card" style="margin-top: 18px;">
+        <h3>Gains grow as the target shrinks</h3>
+
+        <p>Trained on all 24 RoboCasa-DC tasks, SeeTraceAct's gain over the strongest baseline
+          grows as the target region shrinks.</p>
+
+        <figure class="chart">
+<svg class="scatter" viewBox="0 0 920 360" role="img" aria-labelledby="tir-chart-title" xmlns="http://www.w3.org/2000/svg">
+<title id="tir-chart-title">Gain of SeeTraceAct over ViVLA on each of the 24 RoboCasa-DC tasks, plotted against target interaction ratio</title>
+<line x1="50" x2="900" y1="267.2" y2="267.2" stroke="#e5e7eb" stroke-width="1"/>
+<text x="40" y="270.7" text-anchor="end" font-size="11" fill="#667085">-20</text>
+<line x1="50" x2="900" y1="217.3" y2="217.3" stroke="#e5e7eb" stroke-width="1"/>
+<text x="40" y="220.8" text-anchor="end" font-size="11" fill="#667085">-10</text>
+<line x1="50" x2="900" y1="167.5" y2="167.5" stroke="#e5e7eb" stroke-width="1"/>
+<text x="40" y="171.0" text-anchor="end" font-size="11" fill="#667085">0</text>
+<line x1="50" x2="900" y1="117.7" y2="117.7" stroke="#e5e7eb" stroke-width="1"/>
+<text x="40" y="121.2" text-anchor="end" font-size="11" fill="#667085">+10</text>
+<line x1="50" x2="900" y1="67.8" y2="67.8" stroke="#e5e7eb" stroke-width="1"/>
+<text x="40" y="71.3" text-anchor="end" font-size="11" fill="#667085">+20</text>
+<line x1="198.9" x2="198.9" y1="18" y2="312" stroke="#e5e7eb" stroke-width="1" stroke-dasharray="3 3"/>
+<text x="198.9" y="330" text-anchor="middle" font-size="11" fill="#667085">0.1%</text>
+<line x1="525.6" x2="525.6" y1="18" y2="312" stroke="#e5e7eb" stroke-width="1" stroke-dasharray="3 3"/>
+<text x="525.6" y="330" text-anchor="middle" font-size="11" fill="#667085">1%</text>
+<line x1="852.3" x2="852.3" y1="18" y2="312" stroke="#e5e7eb" stroke-width="1" stroke-dasharray="3 3"/>
+<text x="852.3" y="330" text-anchor="middle" font-size="11" fill="#667085">10%</text>
+<line x1="297.3" x2="297.3" y1="312" y2="316" stroke="#cbd5e1" stroke-width="1"/>
+<line x1="354.8" x2="354.8" y1="312" y2="316" stroke="#cbd5e1" stroke-width="1"/>
+<line x1="395.6" x2="395.6" y1="312" y2="316" stroke="#cbd5e1" stroke-width="1"/>
+<line x1="427.3" x2="427.3" y1="312" y2="316" stroke="#cbd5e1" stroke-width="1"/>
+<line x1="453.1" x2="453.1" y1="312" y2="316" stroke="#cbd5e1" stroke-width="1"/>
+<line x1="475.0" x2="475.0" y1="312" y2="316" stroke="#cbd5e1" stroke-width="1"/>
+<line x1="493.9" x2="493.9" y1="312" y2="316" stroke="#cbd5e1" stroke-width="1"/>
+<line x1="510.7" x2="510.7" y1="312" y2="316" stroke="#cbd5e1" stroke-width="1"/>
+<line x1="623.9" x2="623.9" y1="312" y2="316" stroke="#cbd5e1" stroke-width="1"/>
+<line x1="681.5" x2="681.5" y1="312" y2="316" stroke="#cbd5e1" stroke-width="1"/>
+<line x1="722.3" x2="722.3" y1="312" y2="316" stroke="#cbd5e1" stroke-width="1"/>
+<line x1="753.9" x2="753.9" y1="312" y2="316" stroke="#cbd5e1" stroke-width="1"/>
+<line x1="779.8" x2="779.8" y1="312" y2="316" stroke="#cbd5e1" stroke-width="1"/>
+<line x1="801.7" x2="801.7" y1="312" y2="316" stroke="#cbd5e1" stroke-width="1"/>
+<line x1="820.6" x2="820.6" y1="312" y2="316" stroke="#cbd5e1" stroke-width="1"/>
+<line x1="837.3" x2="837.3" y1="312" y2="316" stroke="#cbd5e1" stroke-width="1"/>
+<line x1="50" x2="900" y1="312" y2="312" stroke="#cbd5e1" stroke-width="1"/>
+<text x="475" y="352" text-anchor="middle" font-size="11" fill="#667085">Target region, % of camera view (log scale)</text>
+<text x="56" y="30" text-anchor="start" font-size="11" font-weight="600" fill="#2563eb">&#8593; SeeTraceAct better</text>
+<text x="900" y="352" text-anchor="end" font-size="11" font-weight="600" fill="#2563eb">Less precision-sensitive &#8594;</text>
+<text transform="translate(13 165) rotate(-90)" text-anchor="middle" font-size="11" fill="#667085">Gain over ViVLA (pp)</text>
+<circle cx="568.1" cy="289.6" r="6" fill="#2563eb" stroke="#ffffff" stroke-width="2"></circle>
+<circle cx="142.1" cy="45.4" r="6" fill="#2563eb" stroke="#ffffff" stroke-width="2"></circle>
+<circle cx="429.2" cy="269.1" r="6" fill="#2563eb" stroke="#ffffff" stroke-width="2"></circle>
+<circle cx="342.5" cy="260.2" r="6" fill="#2563eb" stroke="#ffffff" stroke-width="2"></circle>
+<circle cx="289.2" cy="93.7" r="6" fill="#2563eb" stroke="#ffffff" stroke-width="2"></circle>
+<circle cx="789.0" cy="232.3" r="6" fill="#2563eb" stroke="#ffffff" stroke-width="2"></circle>
+<circle cx="187.1" cy="103.2" r="6" fill="#2563eb" stroke="#ffffff" stroke-width="2"></circle>
+<circle cx="469.0" cy="112.2" r="6" fill="#2563eb" stroke="#ffffff" stroke-width="2"></circle>
+<circle cx="220.0" cy="121.1" r="6" fill="#2563eb" stroke="#ffffff" stroke-width="2"></circle>
+<circle cx="335.6" cy="121.6" r="6" fill="#2563eb" stroke="#ffffff" stroke-width="2"></circle>
+<circle cx="259.3" cy="130.6" r="6" fill="#2563eb" stroke="#ffffff" stroke-width="2"></circle>
+<circle cx="383.0" cy="195.9" r="6" fill="#2563eb" stroke="#ffffff" stroke-width="2"></circle>
+<circle cx="345.5" cy="195.4" r="6" fill="#2563eb" stroke="#ffffff" stroke-width="2"></circle>
+<circle cx="404.9" cy="139.6" r="6" fill="#2563eb" stroke="#ffffff" stroke-width="2"></circle>
+<circle cx="408.8" cy="140.1" r="6" fill="#2563eb" stroke="#ffffff" stroke-width="2"></circle>
+<circle cx="270.0" cy="186.4" r="6" fill="#2563eb" stroke="#ffffff" stroke-width="2"></circle>
+<circle cx="97.7" cy="149.1" r="6" fill="#2563eb" stroke="#ffffff" stroke-width="2"></circle>
+<circle cx="476.6" cy="185.9" r="6" fill="#2563eb" stroke="#ffffff" stroke-width="2"></circle>
+<circle cx="412.9" cy="185.9" r="6" fill="#2563eb" stroke="#ffffff" stroke-width="2"></circle>
+<circle cx="270.0" cy="149.1" r="6" fill="#2563eb" stroke="#ffffff" stroke-width="2"></circle>
+<circle cx="370.9" cy="177.0" r="6" fill="#2563eb" stroke="#ffffff" stroke-width="2"></circle>
+<circle cx="834.1" cy="176.5" r="6" fill="#2563eb" stroke="#ffffff" stroke-width="2"></circle>
+<circle cx="418.5" cy="176.5" r="6" fill="#2563eb" stroke="#ffffff" stroke-width="2"></circle>
+<circle cx="746.2" cy="167.5" r="6" fill="#2563eb" stroke="#ffffff" stroke-width="2"></circle>
+<line x1="142.1" y1="45.4" x2="159.7" y2="56.6" stroke="#94a3b8" stroke-width="1"/>
+<text x="164.1" y="63.4" text-anchor="start" font-size="11.5" font-weight="600" fill="#1f2937">Turn on stove</text>
+<line x1="789.0" y1="232.3" x2="771.4" y2="245.1" stroke="#94a3b8" stroke-width="1"/>
+<text x="767.0" y="252.3" text-anchor="end" font-size="11.5" font-weight="600" fill="#1f2937">Close double door</text>
+<line x1="568.1" y1="289.6" x2="585.7" y2="297.6" stroke="#94a3b8" stroke-width="1"/>
+<text x="590.1" y="303.6" text-anchor="start" font-size="11.5" font-weight="600" fill="#1f2937">Open double door</text>
+</svg>
+        </figure>
+      </div>
     </section>
 
-    <!-- <section aria-labelledby="video-heading">
+    <!-- <section class="reveal" aria-labelledby="video-heading">
       <h2 id="video-heading">Video</h2>
 
       <div class="card">
@@ -632,7 +1231,7 @@
       -->
     <!-- </section> -->
 
-    <section aria-labelledby="citation-heading">
+    <section class="reveal" aria-labelledby="citation-heading">
       <h2 id="citation-heading">Citation</h2>
 
       <div class="card">
@@ -655,5 +1254,25 @@
       </p>
     </div>
   </footer>
+
+  <script>
+    (function () {
+      var items = document.querySelectorAll(".reveal");
+      if (!("IntersectionObserver" in window) ||
+          window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+        items.forEach(function (el) { el.classList.add("is-visible"); });
+        return;
+      }
+      var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("is-visible");
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { rootMargin: "0px 0px -8% 0px", threshold: 0.08 });
+      items.forEach(function (el) { observer.observe(el); });
+    })();
+  </script>
 </body>
 </html>
