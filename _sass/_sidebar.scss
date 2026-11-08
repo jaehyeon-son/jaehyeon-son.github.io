@@ -149,8 +149,26 @@
     display: block;
   }
 
+  /* match the outlined .pub-btn links used in the publication list */
   button {
     margin-bottom: 0;
+    padding: 0 0.9em;
+    color: $gray !important;
+    font-size: 0.78em;
+    font-weight: normal;
+    letter-spacing: 0.06em;
+    line-height: 2;
+    background-color: transparent;
+    border: 1px solid $light-gray !important;
+    border-radius: 4px;
+    transition: color 0.15s ease, border-color 0.15s ease;
+
+    &:hover,
+    &:focus {
+      color: #7289da !important;
+      border-color: #7289da !important;
+      background-color: transparent;
+    }
 
     @include breakpoint($large) {
       display: none;
