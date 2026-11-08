@@ -129,3 +129,17 @@
     white-space: nowrap;
   }
 }
+
+/*
+   Inline X logo in the sidebar (Font Awesome 5 has no X icon)
+   ========================================================================== */
+
+.icon-x {
+  display: inline-block;
+  width: 1.25em;
+  height: 1em;
+  vertical-align: -0.125em;
+  padding: 0 0.1em;
+  box-sizing: border-box;
+  fill: currentColor;
+}
