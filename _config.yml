@@ -224,6 +224,11 @@ permalink: /:categories/:title/
 timezone: America/Los_Angeles # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 # Plugins
+# GitHub Pages enables jekyll-titles-from-headings by default, which would turn
+# the first "## About" on the home page into a page title and render it twice.
+titles_from_headings:
+    enabled: false
+
 plugins:
     - jekyll-paginate
     - jekyll-sitemap
